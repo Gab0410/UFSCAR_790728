@@ -1,0 +1,6 @@
+Função friend:
+
+=>Uma função ou classe do tipo firend, é algo que consegue acessar metodos tanto public como privados de outra classe
+=>As definições friend, podem estar em qualquer parte da classe, ja que nao sao do tipo public,private ou protected
+=>O exemplo main.cpp mostra uma ultilizacao do tipo friend, e nesse caso analisa-se que há a modificacao do atributo priado x, por um metodo que nao é da classe
+Count, mas é declarada como friend da propria, atenta-se que caso a função setX nao recebessea referencia da classe, isso nao seria possivel

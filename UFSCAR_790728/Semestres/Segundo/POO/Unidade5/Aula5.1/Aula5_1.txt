@@ -1,0 +1,31 @@
+Polimorfismo e classes abstratas:
+
+-> Contina dentro do contexto de POO, sendo uma das caracteristicas desse tipo de programação
+->A possibilidade de uma entidade poder assumir varias formas, Polimorfismo é o principio pelo qual duas ou mais classes derivadas de uma mesma
+superclasse, podem invocar métodos que tem a mesma identificação(assinatura), mas comportamentos diferentes
+->O método que será executado vai ser definidio em tempo de execução
+
+Polimorfismo:
+->Capacidade de assumir formas diferentes. permitindo que uma variavel use um método, dependendo de seu tipo/ seus parametros/valores
+
+Exemplo:Classe Mamifero
+->As classes, cachorro,cavalo e ovelha tem um metodo emite_som()
+->Essas classes sao validas, mas emitir_som() é uma ação que todos fazem, mas de forma diferentes
+->Mas dessa forma, qual será o método acionado, o da classe mamifero ou das classes subsequentes?
+->Como emitir_som(), na classe base, foi declarado do tipo "virtaul" entao, o emitir_som() será o da classe cachorro.
+->Caso nao tenha usado o "virtaul" será usado o da classe base
+->Em C++ o virtual so opera em ponteiros e referencias, a passagem de um objeto por valor nao permite esse tipo de abordagem
+
+Abstração de dados:
+->Caso um método nao esteja presente na classe base,mas deve estar presente em qualquer classe subsequente de figura, para isso deve-se colocar
+virtual void desenhar() = 0;
+->Essa função é tornada pura, e qualquer classe com uma ou mais funções puras é um tipo abstrato de dados e não se pode instanciar um objeto de tal classe,
+dessa forma, não se pode criar um objeto dessa clase, pois não tem como criar um objeto que não tem um elemento definido, logo, em nenhum lugar do codigo
+pode-se usar "<nome-classe> <nome-variavel>".
+->Quando se coloca uma função virtual pura em sua classe, o programador está sinalizando duas coisas, que o programador nao deverá instanciar um objeto desta
+classe ou que a função deve ser anulada na classe derivada.
+->Mas por que usar uma classe onde nao se pode criar objeto?
+->Pensando pela otica de uma fabrica de software, o que será util é que ao fazer esse tipo de construção essas classes devem ser anuladas nas classes herdadas
+logo, esse tipo de contrução obriga que nas classes herdadas existam esses métodos
+->Concluindo,, se uma classe base tiver 3 funçoes virtuais puras, a classe que herda a classe base, deve anular essas tres funções, caso o contrario se torna
+uma classe abstrada, caso anule as 3 funções puras, então essa classe não é abstrada e dessa forma pode ser declarada normalmente

@@ -1,0 +1,29 @@
+Const e static:
+
+=>Objetos const e metodos const:
+    =>Modificações são feitas somente onde realmente são necessárias, logo um metodo/variavel que 
+    depois de definida nao pode ser alterada, logo vira constante.
+    -A palavra chave para declarar tanto metodo como variavel do const, é "const"
+    -Objetivo, é criar objetos que apos criados não serão mais alterados, caso tente mudar o objeto
+    do tipo const, será acusado um erro de execução.
+    EX:
+
+    =>const Hora meio_dia(12,0,0), a partir dessa declaração esse objeto não pode ser mais modificado
+    =>Um objeto const, so pode acessar métodos const, para declarar um metodo const, apenas incluir
+    a palavra const, ex: void imprime() const; esse método sera constante.Esse metodo so pode acessar, objetos
+    do tipo const.
+    =>Nenhum metodo nao const, pode acessar um metodo const, logo a partir de agora, todos os metodos
+    que não alterem os objetos como const.
+    =>O compilador nao permite que metodos const modifiquem os atributos, metodos const também nao podem
+    acessar metodos que nao sao const
+    =>Construtores e destrutores nao podem ser const, os construtores e destrutores alteram os objetos
+    constantes
+
+    =>Caso se deseje declarar atributos do tipo const, pode também entrando deve se declarar no construtor desse maneira:
+   -> (nome classe)::(nome construtor)((tipo variavel) (nome variavel)): (nome atributo)((nome atributo)){
+
+=>Objetos e metodos static:
+
+    =>Ultilização, como nao esta no escopo global e sim no escopo de classe, o tipo static, faz com que todos os objetos tenham um unico valor no atributo,
+    e é compartilhado pelos objetos da mesma classe, podendo ser publico privado ou protegido, esses membros precisam ser acessados fora da classe.
+    =>Um atributo static privado so pode ser acessado por um metodo publico do tipo static

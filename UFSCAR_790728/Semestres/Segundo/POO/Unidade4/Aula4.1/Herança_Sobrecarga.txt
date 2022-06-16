@@ -1,0 +1,66 @@
+Aula 4.1:
+
+Herança:
+->É o mecanismo do paradigma de orientação a objetos que permite compartilhar atributos e operações entre classes, basead em um relacionamento
+hierarquico, podendo ser chamada de subclasse ou classe derivada.
+
+->Cada subclasse herda todas as propriedades de sua superclasse adicionando suas propriedades unicas e particulares, as propriedades da classe base nao precima 
+ser repetidas nas classes derivadas
+
+->Por exemplo, ao definir a classe mamifero, um cachorro(outra classe), tem caracteristicas da classe mamifero, mas tem as particularidades da classe cachorro
+que distinguem de outras possivel subclasse, logo Cachorro é um mamifero, logo cachorro é uma subclasse de mamifero
+
+->Se x é uma subclasse de y, e w é uma subclasse de x, entao x é uma herança direta para y, e w uma herança indireta a y
+
+->Herança múltipla, é quando uma subclasse contém duas superclasse, ou seja é derivada de duas ou mais classes
+
+->Desse modo, existe uma confusão entre heraça e composição, pois composição é quando uma classe contém outras particularidades de outras classes, já herança não
+
+->Dessa forma, herança permite que caracteristicas de uma classe sejam passadas para outras classes derivadas, de forma a construir objetos de forma mais 
+rapido e mais simples
+
+->Generealização:
+
+->De métodos: ultilização do mesmo nome de metodo, mas com operações realizadas diferentes, ou o mesmo nome mas com tipos de parametros diferentes, ou seja,
+a criação de métodos com o mesmo nome, que respondem por provocações diferentes, por parametros diferentes, etc...
+
+->De operações: In c++, pode se fazer uma matriz resultante A, sendo uma soma de B e C, apenas com o operados +
+
+Continuação sobre herança:
+
+->Em C++ para realizar uma herança deve-se fazer:
+
+    class Pessoa{
+        ...
+    }
+->Para fazer o uso da herança:
+
+    class Funcionario:pubic Pessoa{
+        ...
+    }
+->O uso da herança pode ser visto pelo uso de public, que nesse caso é um tipo de herança public(pode ser private ou protected),, e é o que geralmente é usado
+->Dados privados da classe base, não podem ser acessados diretamente pela classe derivada, mas isso é de fato bom, visto que a classe base não tem permissao
+de alterar dados da superclasse de maneira aleatoria e irregrada
+->Dados protected podem ser acessados diretamente pela classe derivada
+->Um exemplo de herança multipla:
+
+class Veiculo{
+    ...
+}
+
+class Passeio:public Veiculo{
+    ...
+}
+
+class Carga:public veiculo{
+    ...
+}
+
+class utilitario:public Passeio,public Carga{
+    ...
+}
+
+->Sem o uso de heranças é possivel repetir a criaçao de metodos e provavelmente repetir os atributos
+->Com o exemplo "Ponto.cpp", é possivel perceber que com a herança, há uma maior facilidade para construir classes, já que existe esse compartilhamento de
+métodos, entretando para mater a segurança e o encaspsulamento, uma subclasse, nunca pode alterar diretamente um atributo, pode alterar apenas por métodos.
+->Dessa maneira a construção de classes, se torna muito mais simples com o conceito e a ultilização de heranças

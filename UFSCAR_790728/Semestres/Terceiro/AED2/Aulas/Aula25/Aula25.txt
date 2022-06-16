@@ -1,0 +1,53 @@
+Busca em largura, uma especialização da busca genérica:
+
+Reelembrando a busca genérica:
+
+busca_GENERICA(G=(v,E),origem=s){
+
+    marcar todos os vertcies como nao visitado
+
+    colocar s no conjunto dos vertcies ativos //armazenar todo vertice que ja foi encontrado, mas que ainda nao foi vistado, ou seja, nao se sabe quais caminhos tem
+    //Nesse caso s vai estar nesse conjunto, pois existe um caminho da origem para a origem
+
+    enquanto ativos != vazio
+        remova um vertice v dos ativos
+        se v ainda nao foi visitado
+            marcar v como visitado
+            para cada aresta/arco (v,w):
+                se w nao foi visitado
+                    colocar w no conjunto dos ativos
+
+}
+
+Agora será visto a busca em larguar, a BFS, que explora o grafo em camadas a partir de um vértice inicial s, e esse comportamento está intimamente relacionado
+com a estrutura de dados fila
+
+Pseudocódigo:
+
+Busca_largura(G,s)
+    marcar todos os vertices como não encontrado
+    marcar s como encontrado
+    colocar s na fila Q
+
+    enquanto a fila Q != vazia:
+        remova v do inicio de Q
+        para cada aresta (v,w):
+            se w nao foi encontrado
+                marcar w como encontrado
+                insere no final de Q
+
+
+Comparando a busca em largura com a busca generica, é possível perceber três diferenças:
+
+É marcado explicitamente quando um vértice é encontrado
+Nao é marcado quando um vértice é visitado
+Nao verificamos se o vértice saindo da fila já foi visitado
+
+Os conceitos de encontrado e visitado valem mesmo que o algoritmo nao os registre explicitamente
+
+A principal aplicação da busca em largura, é o calculo de distâncias não ponderadas:
+
+O comprimento de um caminho P é o numero de arestas em P, ou de modo equivalentes, o numero de vertices em P-1
+
+
+

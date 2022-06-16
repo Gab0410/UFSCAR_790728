@@ -1,0 +1,107 @@
+Seleção e contagem de inversões:
+
+
+Problema da seleção:
+
+A ordem de um elemento é uma medida da grandeza dele, em relação aos seus pares, logo a ordem de um elemento é k, então existem k elementos de valor menor que o dele.
+
+No problema da seleção, dado um vetor v de tamanho n, e um inteiro k [0,n-1], e queremos o valor da ordem do elemento, como isso poderia ser feito, visando
+a eficiencia máxima do algoritmo
+
+A ordem de um elemento, não muda de acordo com a posição dos elementos do vetor, pois ultiliza um mecanismo de comparação
+
+O problema de minimo e máximo podem ser realizados com esse problema, por exemplo o mínimo corresponde ao elemento de ordem 0, e o máximo corresponde ao elemento
+de ordem n-1
+
+O problema da seleção é trivial se v estiver ordenado, logo se ordenarmos ele, essa abordagem teria eficiencia do mecanismo de ordenção, no caso de ser quick sort
+seria n*lg(n), logo se torna muito eficiente
+
+Mas existe um caso particular, em que podemos apenar percorrer o vetor, o que resulta em uma eficiencia de n, que é menor que n*lg(n)
+
+-Para ordenar, pode-se projetar um algoritmo para o problema da seleção, que começa separando o vetor ao redo de um pivô, e então decide em qual subvetor continuar a busca
+pelo k-esimo
+
+int selecao3(int v[],int p,int r,int k){
+
+    int j;
+    j = separa(v,p,r);
+    if(k == j)
+        return v[j];
+    if(k<j)
+        return selecao3(v,p,j-1,k);
+    return selecao3(v,j+1,r,k);
+}
+
+int selecao4(int v[],int p,int r,int k){
+    int desl,j,l;
+
+    double l = RAND_MAX;
+    l = l+1;
+    desl = ( int )(((rand () / l)) * ( double )( r- p + 1 ));
+    troca(&v[p+desl],&v[r]);
+    j = separa(v,p,r);
+
+      if(k == j)
+        return v[j];
+    if(k<j)
+        return selecao4(v,p,j-1,k);
+    return selecao4(v,j+1,r,k);
+    
+}
+
+Ao ultilizar o algoritmo iterativo, a quantidade de memória ultilizada é muito menor, visto que se ultiliza apenas uma chamada, e cria menos variaveis.
+
+Problema da contagem de inversões:
+
+-Contar quantas inversões são necessárias para ordenar um vetor v.Esse algoritmo leva n² no pior caso.
+
+-Para obter um algoritmo mais eficiente para este problema, nos inspirando no mergeSort, e em particular na rotina de intercalação
+
+//Primeiro subvetor entre p e q-1, segundo subvetor entre q e r-1
+unsinged long long intercalaContando(int v[],int p,int q,int r){
+
+    int i,j,k,tam;
+
+    unsinged long long num_inv = 0;
+    i = p;
+    j = q;
+    k = 0;
+    tam = r - p;
+
+    int *w = malloc(tam * sizeof(int));
+
+    while(i < q && j < r){
+        if(v[i] <= v[j])
+            w[k++] = v[i++]
+        else{
+            w[k++]=v[j++];
+            num_inv += q-i
+        }
+    }
+
+    while(i<q) w[k++] = v[i++];
+    while(j<r) w[k++] = v[j++];
+
+    for(k=0;k<tam;k++)
+        v[p+k] = w[k];
+
+    free(W);
+
+    return num_inv;
+}
+
+
+unsinged long long contarInversoesR(int v[],int p,int r){
+    int m;
+    unsinged long long num_inv = 0;
+
+    if(r-p>1){
+        m = (p+r)/2
+
+        num_inv += contarInversoesR(v,p,m);
+        num_inv += contarInversoesR(v,m,r);
+        num_inv += intercalaContando(v,p,m,r);
+    }
+
+    return num_inv;
+}

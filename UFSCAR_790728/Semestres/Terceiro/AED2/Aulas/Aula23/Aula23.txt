@@ -1,0 +1,67 @@
+Ordenação topologica,DFS,DAGs aleátorios
+
+Encontrar uma ordenação topologica num grafo dirigido acíclico, também conhecido por DAG
+
+Para isso precisamos entender o que é um DAG, ou seja, um grafo orientado que não possui ciclos
+
+Definir uma ordenação topologica, que corresponde a uma rotulação f dos vertices de um grafo, tal que cada vertcie tem exatamente um rotulo inteiro [1,n] e 
+na qual para qualquer arco (u,v) temos f(u) < f(v), ou seja, um arco que vai do vertice u para o vertice u, só pode acontecer se o rotulo de v for maior que
+o rotulo de u.
+
+Nas ordenações o vertice s, são chamados de fontes, pois nao recebe nenhum arco, os arcos apenas saem, e no arco que nenhum arco sai é chamado de sorvedouros
+
+
+Motivação: Encontrar uma ordem para realizar uma sequencia de tarefas que respeite as restrições de precedencia entre as tarefas, as quais são representadas
+pelos arcos.
+
+Estuda-se a relção entre um grafo orientado é aciclico se e somente se possui uma ordenação topologica.
+
+
+Uma maneira bastante eficiente de implementar o DAG, é "remover" um sorvedouro por vez é usando busca em profundidade, com um laço externo sobre os vértices,
+e um contador decrescente.
+
+Loop da busca em profundidade(G=(V,E)), gráfico dirigido e acíclico
+
+    marque todo v E V como não visitado
+    rotulo_atual = n //rotulo do proximo vertice sorvedouro que se encontra, ordenação é feita do fim pro começo
+    para cada v E V
+        se v nao foi visitado
+            buscaProfRecursiva(G,v)
+
+Laço externo da busca em profundidade está acima, agora será apresentado a busca em profundidade recursiva:
+
+BuscaProfR(G,v)
+    marque v como visitado
+
+    para cada arco (v,w)
+        se w nao foi visitado
+            BuscaProfR(G,w)
+
+    f(v) = rotulo_atual
+    rotulo_atual--;
+
+
+
+Analise da eficiencia do algoritmo:
+
+A eficienia de tempo deste algoritmo é O(n+m), que é derivada da eficiencia da busca em Profundidade, tal que n é o numero de vertices e m o numero de arestas
+
+
+Construção de DAGs aleátorios:
+
+Para testar os algoritmos de busca, é necessário criar DAGs, pois caso o grafo nao foi aciclico e dirigido, a busca não funcionará corretamente.
+
+A principio poderiamos testar, antes de inserir um arco se ele gera um ciclo, usando alguma busca em grafo, ou seja, uma busca a partir do destino, e verificar
+se atinge a origem, mas como um grafo dirigido é aciclco se e somente se ele tem ordenação topológica, logo podemos escolher alteatoria e uniformemente uma
+ordenação que simplesmente é uma permutação dos vértices do grafo e testar antes de inserir cada arco (v,w), se ele respeita essa ordenação, se perm[v] < perm[w]
+
+A permutação mapeia vértices para posições na ordenação
+
+A principio para simplificar considere a ordenação canonica, isto é perm[v] = v+1 para v em [0,n-1]
+
+
+para isso:
+
+perm = malloc(n*sizeof(int));
+for(i=0;i<n;i++)
+    perm[i] = i+1;

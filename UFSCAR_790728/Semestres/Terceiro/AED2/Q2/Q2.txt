@@ -1,0 +1,32 @@
+1. B
+2.C
+3. D
+4.D
+5. D 
+
+
+
+2.
+i) 8 * lg(n)*n
+ii) 10 * (n digitos por chave * soma do numero de elementos n com a base)
+
+
+iii)Numero de elementos for 10⁹, numero de bits de cada chave for 64, numero de bits de cada digito for 8
+
+
+iv) 8 * 9 * lg(10) * 10⁹ = 239 178 822 831 = 2,3 * 10¹¹
+
+10
+8-Digitos por chave
+10⁹-numero de elementos numero
+10 - base
+
+10 * ( 8 * (10⁹+ 10)) = 80 000 000 800 = 8 * 10^10
+
+
+
+5.
+
+Vetor 1) 19,4,17 < 21 < 37,26,30
+Vetor 2) Não tem, pois o 37 é o primeiro valor do Vetor
+Vetor 3) 17,21,19,4,26,30 < 37 < vazio;

@@ -1,0 +1,42 @@
+Aula 2.1:
+
+->Comparativamente com a linguagem C, C++, possui poucas palavras reservadas à seu código, sendo assim uma linguagem de pequeno porte, mas com grandes
+ultilidade
+->Diferentemente do que acontece em C, em C++, não são usadas funções, são usadas classes, e métodos, para trabalaharem como funções
+->No "Exemplo1.cpp", está um exemplo de código muito básico da linguagem, onde mostra um exemplo básico de saída de dados;
+->"namespace" faz parte do que chama "Ambiente de Nomes", no C++ serve para efetuar agrupamentos lógicos;
+->Boa prática: Usar comentários;
+->A imagem 1, apresenta os tipos de dados em C++, e suas modificações;
+->Sintaxe da declaração das variavies em C e em C++ é semelhante;
+->Em C, só se pode declarar variavies dentro das funções, já em C++, pode-se declarar variavies em qualquer ponto do código, tendo 3 tipos de escopos:
+    ->Local: A variavel local, dentro do seu local prevalece à global(apenas em seu escopo), caso queira acessar a variavel global no local, deve-se Usar
+    o "::", como mostra o "exemplo2.cpp";
+    ->Global;
+    ->Arquivo;
+
+->Classes de Armazenamento:
+    ->Em C++, não há nada de novo, que não havia em C;
+    ->Tipos de classes:
+        ->auto: A variavel desse tipo tem pode apenas dentro do seu bloco, quando se sai do bloco o dado é destruido, sendo assim de escopo local, e armazenado
+        na memória
+        ->register: Pode ser usada apenas com char e int, e é muito parecida com o tipo "auto", entretando ao inves de se armazenar na memória, ela se armazena
+        nos registradores da CPU, tendo um acesso mais rapido, e são declaradas no inicio do porgrama
+        ->Extern: Consegue obter valores externos, ou seja de outros códigos que estejam linkados com o "main";
+        ->static: Um tipo de variavel que apos qualquer alteração dentro de seu bloco continua com o valor apos a alteração, que pode ser visto no "exemplo3.cpp"
+->Conversão de tipos:
+    ->Em C++, é proposta uma conversão de tipos explicitas, onde pode se alterar pelos tipos padrões, ou pelos tipos criados pelo programados, como mostrado
+    no "exemplo4.cpp";
+    ->Para o uso de cadeia de caracteres, vulgo strings, existem dois tipos de uso, explicitados no "exemplo4.cpp";
+->Entrada e saída de dados:
+    ->cin = scanf;
+    ->cout = printf;
+    Exemplo:
+    -> Sendo as delcarações de variaveis int x; float f,g;
+    ->Entao:
+        -> cin>>x; -> scanf("%d",&x);
+        -> cin>>f>>g -> scanf("%f %f",&f,&g);
+        -> cout<<"x = "<<x -> printf("x = %d",x);
+        ->cout<<"f = "f<<" g = "<<g<<endl;
+->O #define continua igual #define MAXIMO 200, logo ao se encontrar a palavra MAXIMO, será substituido por 200;
+->Em C++, surge-se o tipo const que funciona igual ao #define, logo ao se declarar não é possivel substituir;
+->E ainda existe o "typedef" que funciona da forma typedef int MEU_INT; Em que MEU_INT  funciona como o tipo int;

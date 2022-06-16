@@ -1,0 +1,60 @@
+1.
+O fator de carga alfa = n/m corresponde ao tamanho médio de uma lista
+de chaves encadeadas (supondo um espalhamento uniforme da função hash utilizada). Portanto, o tempo médio para acesso a uma chave que não está na tabela é 
+O(1 + alfa), pois primeiro localiza-se a posição da lista encadeada, depois percorre-se toda a lista. Tomando-se a média considerando apenas chaves presentes 
+na tabela, o raciocínio é um pouco mais elaborado. O número de elementos examinados durante uma busca com sucesso por um elemento x é 1 elemento a mais do que 
+o número de elementos que aparecem antes de x na lista de x. Novos elementos são inseridos na frente da lista. Assim, elementos antes (na frente) de x na 
+lista foram inseridos depois que x foi inserido. Para encontrar o número esperado de elementos que serão examinados, nós pegamos a média, dos n elementos x na 
+tabela, de 1 mais o número esperado de elementos adicionados à lista de x depois que x foi adicionado na lista. E possível provar que o tempo médio da busca 
+é o mesmo: O(1 + alfa).
+
+2.
+Hashing universal: uma família H = {hi}, para i de 1 a t, t > 0, de funções hash com contradomínio de tamanho m, e com a propriedade de que, para qualquer 
+par de chaves x, y do conjunto de chaves possíveis, x e y são sinônimas segundo no máximo t/m das funções de H. Com isso, escolher aleatoriamente e 
+uniformemente uma função de H para distribuir as chaves equivale a utilizar uma função hash “muito boa”, que mapeasse uniformemente as chaves pelos m 
+elementos do contradomínio.
+
+Alternativa: Slide 37 do conteúdo visto na aula.
+
+3.
+
+Existem infinitas mensagens m, mas, existe um número finito de hashes que podem ser calculados. Suponha que H(m) tenha, por definição, um número finito de n 
+bits. Com n bits, teremos 2 elevado a potência n, hashes únicos, e quanto mais alto o valor de n, mais alto será o resultado de hashes únicos. 
+Assim, existem muitos hashes únicos que podem ser produzidos (de fato, esses números é quase impossível de ser compreendido), mas isto também significa, 
+matematicamente, que existem algumas mensagens diferentes, que terão o mesmo hash. Isto não deve trazer preocupações, em termos práticos, pois é extremamente 
+raro que duas mensagens diferentes tenham o mesmo hash. Ainda mais importante, em termos práticos, é o fato de não ser possível modificar uma mensagem e 
+ainda assim, produzir o mesmo hash que a mensagem original. Se alterarmos um bit em uma mensagem, o hash será radicalmente diferente da mensagem original. 
+Logo, podemos dizer que, em termos práticos, as funções Hash são seguras, e que a segurança aumenta, na medida que n aumenta.
+
+Ou mais formalmente:
+Se H(m) é resistente à colisões (fraca) então é computacionalmente inviável encontrar x diferente de x´, tal que H(x) = H(x´). Ou que dado o par ordenado 
+(x, x´), onde significa que x está relacionado a x´, é fortemente resistente a colisões, ou seja, computacionalmente inviável encontrar H(x) = H(x´).
+
+4.
+
+Sim, H(M) tem como entrada um bloco de tamanho p, mas dá como saída um valor fixo, que é sempre um valor do tipo de número natural, soma dos valores da 
+mensagem M = (a1, a2, a3, ...., ap).
+
+5.
+
+Sim, basta somar os componentes da mensagem M. A operação de soma de números naturais é bem conhecida.
+
+
+6.
+
+Falso. Contra-exemplo: Seja h = 3. Considere x = (6,9), onde a mensagem M(6,9) é diferente de M(9,6), pois os componentes de M são indexados de 1 a p, e 
+neste caso, existe uma ordem sobre os componentes. Ambas as mensagens proporcionam H(9,6)=H(6,9)=(9+6) mod 12 = (6+9) mod 12 = 3
+
+7.
+
+Falso. Tome qualquer mensagem M e adicione o dígito decimal 0 para a sequência, onde H(9+6+0) mod 12 = H(15) mod 12 = H(9+6) = 3 ; ela terá o mesmo valor 
+de hash. Ou considere x = (9,6) que é diferente de y = (6,9), mas os H(M) são iguais.
+
+8.
+Falso. Seja os pares x=(9,6) e y=(6,9). Então, (x, y) = ( (9,6), (6,9) ), mas H(x) mod 12 = 3 e H(y) mod 12 = 3
+
+9.
+Seja M(9,6). Então, H(M) = (9+6) mod 12 = (15 / 12) = 1 e resto = 3. O resto é, pela aritmética modular, por definição, o resultado da operação.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+

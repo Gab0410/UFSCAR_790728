@@ -1,0 +1,50 @@
+Aula 3.1:
+
+=>Nessa aula será tratado o conceito de ponteiros.
+=>Comparativamente com um camera de futebol, o ponteiro aponta para algo, no caso do camera
+para o jogador de futebol, no caso de ponteiros, aponta para uma posição/endereço de memoria
+
+->Em C podemos chamar esse ponteiro da forma int *p, logo p é um ponteiro do tipo int
+->Um ponteiro, ou seja um tipo de dado que aponta à um endereço de memoria, pode ser int,float,char etc
+mas, cada ponteiro tem um tamanho diferente, ou seja um ponteiro do tipo int, tem tamanho diferente de
+um ponteiro do tipo double
+EM C:
+
+int *p;
+p = &x[1];
+A = *p
+A=5
+->Ao incrementar p, o endereço de memoria ira acrescer em X, logo p += 3, significa que ele irá acrescer
+3 posições à seu endereço atual
+
+Alocação dinâmica de memória:
+
+=>Esse tipo de processo é importante, pois a quantidade de variaveis, de vetores, de posições na memoria
+necessarias para cada programa é variavel, logo é bom que o programa solicite ao usuario qual o tamanho,
+quantas posições da memória serão usadas
+
+Exemplo de como fazer isso:
+
+    p = malloc(10*sizeof(float))
+    if(p==NULL) a memoria nao foi alocada, logo nao há espaço suficiente para o alocamento exigido
+
+=>Para liberar a memoria, basta fazer o uso do free(p), e dessa forma a memoria sera desalocada
+
+Confusões comuns:
+
+=>Tipos de variaveis
+=>*p e &p, o asterisco remete ao conteudo do ponteiro, o & remete ao endereço do ponteiro, voltando a 
+analogia do futebol, uma coisa é quem está com a bola(*), a outra é onde está a bola(&)
+
+Passagem de parâmetros:
+
+
+->Por valor: uma copia do ponteiro é passado para o programa
+
+->Por referencia: A função é autorizada a manipular no endereço de memoria do ponteiro, oque alterará
+ela em escopo global
+
+->Vetores e matrizes são passados por referencia por default, logo para ponteiros e matrizes não são 
+colocados & para passá-los
+
+-> Estruturas são passados por valor normalmente, à menos que o usuario deseje passar por referencia

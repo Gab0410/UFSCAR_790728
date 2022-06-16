@@ -1,0 +1,97 @@
+Compactação de dados:
+
+
+Por que compactar dados?
+
+Necessidade de armazenar arquivos de grande porte em memória primária ou secundária, e deseja-se ao mesmo tempo, minimizar o espaço de memória ultilizado, para
+isso codificar o conteudo do arquivo de maneira apropriada, caso o arquivo codificado for menor que o original, ele é armazenado na versão codificada.
+
+Logo, além do arquivo, também é necessário uma tabela de códigos para permitir a decodificação, esses algoritmos cumprem o papel de codificar e decodificar os 
+dados
+
+Economia de memoria:
+
+-Programas requerem muita memoria
+-Transmissão de dados
+
+Dois algoritmos:
+
+1. Compactação quando o arquivo apresenta uma grande quantidade de simbolos consecutivos identicos
+2. Arvore de HUffman. método de codificação que permite a ultilização de códigos de tamanho variável
+
+1.
+
+Determinar a quantidade de simbolos identicos consecutivos, e cada subsequencia maximas de simbolos identicos é substituida por um numero indicando a frequencia
+do simbolo em questão, pode-se adotar, como estratégia, que a ausencia do numero representativo da frequencia do simbolo, significa que a frequencia é igual
+a 1, logo exige que o texto nao contenha caracteres numéricos.
+
+Para contornar o problema do código ambiguo pode-se ultilizar alguns simbolos especiais, como o @, que nao deve fazer parte do texto
+
+Ex: AAA33333BA6666888DDDDDDD99999999999AABBB
+
+¤ Compactado: 3A5@3BA4@63@87D11@92A3B
+
+2. Algoritmo de HUffman:
+
+Suponha um texto constituido de um conjunto de simbolos, e conhece-se a frequencia fi de cada simbolo si, ou seja, si aparece fi vezes no texto, como
+1 <= i <= n
+
+Logo atribui-se um código para cada um dos símbolos, com a restrição de que nenhum código, seja prefixo de outro
+
+O código de si é dado pelos rótulos das arestas do caminho na árvore desde a raiz até a folha correspondente a si
+
+Para decodificar o texto, basta percorre-lo da esquerda para a direita, ao mesmo tempo que a arvore é percorrida, repetidamente da raiz até a folha encontrada.
+
+Conhecida a arvore de prefixo o processo de codificação é realizada em um numero de passos linear no tamanho da sequencia binária, assim uma questão central
+é o número de dígitos binários da sequencia codificada, logo o comprimento da sequencia binária produzida por uma arvore de prefixo T é denominado custo de T,
+denotado por c(T).
+
+Para minimizar o custo, deve-se construir uma arvore mínima, ou arvore de HUffman.
+
+Seja T uma arvore de prefixo correspondente a um dado texto, em que cada símbolo si ocorre fi vezes
+
+Seja Li o comprimento do código binário do simbolo si, assim cada simbolo si, contribui com fi * Li unidades no custo c(T), logo:
+
+c(T) = somatoria(i até n) fi * Li
+
+A arvore é construida de forma iterativa das folhas para a raiz, ou seja, os códigos são determinados de trás para a frente
+
+O processo correspondente a obter subcódigos para subconjuntos de simbolos, cada subdógico corresponde a uma subarvore
+
+A cada iteração duas subarvore são fundidas em uma unica.
+
+
+É interessante para implementar esta arvore ultilizar um heap.
+
+
+Existem dois procimentos para a manipulação da fila de prioridades:
+
+minimo(T',f,F): retira o elemento com menor prioridade e rearranja o heap
+
+inserir(T,f,F): inclui o elemento T, de prioridade f, na fila F e rearrajna o heap
+
+
+Constroi-Huffman(){
+    para i de 1 ate n-1:
+        minimo(T',f,F)
+        minimo(T'',f,F);
+        T <- T' + T''
+        f(t) <- f(T') + f(T'')
+        inserir(T,f,F)
+}
+
+
+Preferencia é a arvore canônica, ou seja, a altura da subarvore da direita deve ser maior que a altura da subarvore da esquerda
+
+
+Implementação com lista ligada:
+
+Usar uma lista ligada de ponteiros para as arvores, que reflete estritamente como a arvore é montada
+
+A lista ligada está inicialmente ordenada de acorod com as frequencias/probabilide armazenadas na arvores todas elas consistindo de apenas uma raiz
+
+Repetidamente, as duas arvores com as menores probabilidades são escolhidas, a arvore com a menor probabilidade é substituida pela arvore recém-criada
+
+O nó com ponteiro para a arvore com maior probabilidade é removida da lista ligada
+
+Das arvores que tem a mesma probabilidade em suas raizes, a primeira arvore encontrada é escolhida

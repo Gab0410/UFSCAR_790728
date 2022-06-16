@@ -1,0 +1,37 @@
+Ordenação externas:
+
+Consiste em ordenar arquivos de tamanho maior que a memoria interna disponivel
+
+Os algoritmos devem diminuir o numero de acesso a disco, pois é uma operação muito demorada, e também nao cabe o arquivo na memoria, nas memorias externas, os 
+dados ficam em um arquivo sequencial
+
+Nas memorias externas, apenas um registro ou bloco pode ser acessado em um dado momento, essa é uma restrição frote se comparado com as possibilidades de acesso 
+em um vetor, logo os metodos de ordenação interna sao inadequados para a ordenação externas
+
+Diferenças:
+
+
+Custo para acessar um item é em ordem de grandeza maior( ordnação externa)
+
+Custo principal é a transferencia de dados entre a memoria interna e externa
+
+Existem restrições severas de acesso aos dados
+FIta magnética:Apenas o acesso sequencial
+Disco magnético: Podem ser acessados diretamente, mas a um custo alto
+
+
+O desenvolvilmento de metodos de ordneção externa é muito dependente do estado atual da tecnologia
+
+A variedade de tipos de unidades de memorias externa torna os métodos dependentes de vários parâmetros
+
+
+Método mais imporante:Ordenação por intercalação
+
+Intercalar:COmbinar dois ou mais blocos ordenados em um único bloco ordenados
+
+Faz a intercalação por meio de seleções repetidades entre os itens disponíveis em cada momento
+
+A intercalação é ultilizada como uma operação auxiliar na ordenação
+
+
+Estratégi

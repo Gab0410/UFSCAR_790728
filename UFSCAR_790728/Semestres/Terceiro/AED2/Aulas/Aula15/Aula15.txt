@@ -1,0 +1,23 @@
+RadixSort:
+
+Na aula passada vimos coutingSort, que a ideia central é contar os predecessores de cada chave, para posicionar corretamente os elementos no vetor ordenado, esse
+método é muito eficiente para ordenar conjuntos de elementos cujas chaves são inteiros pequenos, e por inteiros pequenos signfiica valores inteiros entre
+0 e R-1, tal que R é um valor limitado pelo nro de elementos do conjunto.
+
+Uma alternativa para ordenar conjuntos cujas chaves são grandes e dividi-las em pedaços menores e ordenar por etapas, essa á a ideia central dos métodos de 
+ordenação RadixSort, chamaremos cada um dos pedaços da chave de dígito, e seu tamanho derivda da base(radix) ultilizada, logo os métodos nao pertencem ao conjunto
+{0,...9}
+
+Os métodos são chamados de ordenação digital, por ordenar as chaves dígito a dígito, ou as strings, caractere-a-caractere, eles variam de acordo com a ordem em que consideramos
+dígitos isto é, se vamos do mais significativos para os menos.
+
+LSD:RadixSort
+
+-Esse método é interessabte para ordenar um vetor v[0...n-1] de chave sendo todas do mesmo comprimento, logo as chaves são strings de caractere, visto que se 
+ordena do dígito menos significativo até o mais significativo, isto é percorre-se cada chave da direita para a esquerda.
+
+-Em cada etapa do algoritmo ordenamos todo o conjunto, considerando apenas um dígito e ultilizando um método de ordenação estável.
+
+-De preferencia, é ultilizado o countingSort, por ser estável e muito mais rápido com chaves pequenas(dígitos).
+
+-O metodo RadixSort é melhor que uma ordenação padrão(O(n*lg(n))), caso R = O(n), e W = O(lg(n)), sendo o(lg(n)) assintoticamente melhor que lg(n)

@@ -1,0 +1,29 @@
+Aula Livro:
+
+->Em C++, a classe ja existente é chamada de classe base, e a classe que irá herdar os membros da classe base se chama classe derivada.
+
+->Em herança, funções friend, não são herdadas, pois como estudado friend não é comutativo nem associativo.
+
+->Diferentemente do private, os membros protected de uma classe, podem ser acessados tanto pelos métodos, quanto pelas funções friend, ou pelas classes 
+derivadas da classe base
+
+->Com herança, para executar um arquivo, deve estar no mesmo diretorio, e executar o cpp da classe base junto ao comando de execução principal
+
+->Caso os atributos da classe base, fossem do tipo protected e não private, a classe derivada, teria acesso direto  aos atributos, mesmo que dessa forma
+os desempenho fica melhor, pois evita chamada de metodos e afins, mas é melhor usar dados do tipo private, para manter o encapsulamento e a maior segurança
+dos dados
+
+->Outro eminente problema de se usar dados protected é que a classe derivada, deve depender apenas dos serviços da classe basica, ou seja suas funções membro
+publicas, pois caso a implementação da classe basica mude, é necessario mudar na classe derivada, gerando um software fragil
+
+->Nessa lógica, os destrutores funcionam de tal forma, quando termina o escopo do objeto da classe derivada, seu destrutor é chamada, e assim em sequencia, até 
+o destrutor da classe básica ser chamada, enfim apagando da memoria o objeto
+->O construtor é na ordem oposta ao destrutor
+
+->Com o exemplo da pasta BasePlus, é possivel ver que a ordem dos construtores, e inversa a ordem dos destrutores, logo se um objeto a1, for criado antes
+de um objeto a2, o destrutor de a1 será chamada depois do destrutor de a2.
+
+->Ao redefinir um método da classe básica na classe derivada, esse método pode ser acessado usando o escopo binario (::), junto ao nome da classe e o nome do
+método
+
+->Ademais, é mostrado um exemplo de herança multiplca, que é quando existem varios niveis de hierarquização

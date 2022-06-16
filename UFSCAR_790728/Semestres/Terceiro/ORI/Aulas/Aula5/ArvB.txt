@@ -1,0 +1,227 @@
+Arvores B:
+
+
+-Uma generalização das arvores binárias, são ABB desenvolvidas para trabalhar bem com acesso a disco
+
+-desenvolvidas para minimizar operações de E/S
+
+-Um nó pode ter vários filhos, e todo nó tem altura O(log(n))
+
+
+-A informação em disco é dividida em pagina e são carregadas para a memoria, então os algoritmos para ARVORE B copiam paginas do disco para a memoria principal
+e escrevem páginas no disco quando necessário
+
+-Para minimizar a operação de leitura e de escrita, busca-se escrever/ler a maior quantidade de informações possível por vez
+
+-Nós da ARVORE B são geralmente do tamanho das páginas de memória
+
+-Uma arvore B T, cuja raiz é dada ṕr T.raiz:
+
+-Todo nó x possui os seguintes atributos:
+
+x.n: numero de chaves armazenadas no no x
+As x.n chaves propriamente ditas, x.ch[1],x.ch[2].... são armazenados em ordem crescente
+
+x.folha: valor booleano, se x é uma folha ou nao
+
+Cada nó interno contém x.n+1 ponteiros x.c[1] para seus filhos, nós folha não possuem filhos, portanto seus atributos c[i] são NULL
+
+As chaves separam os intervalos de chaves armazenados em cada subarvores, se k[i] for qualquer chave armazenada na subarvores com raiz x.c[i] entao:
+
+k1[i]<x.ch[i]<k2<x.ch[2]<...x.ch[i]<k[i+1]
+
+Todos os nós folha posseu ma mesma profundidade, dada pela altura da arvore, que simplificadamente é O(log(n))
+
+Os nós possuem limites inferiores e superiores do numero de chaves que podem conter, com t > 2
+
+Todo nó exceto a raiz, deve ter pelo menos t-1 chaves, assim todo nó interno exceto a raiz, tem pelo menos t filhos, se a arvore não for vazia a raiz deve
+ter pelo menos uma chave
+
+-Todo nó pode conter no máximo 2t-1 chaves, portanto um nó interno pode ter no máximo 2t filhos, e um nó é dito cheio se contém exatamente 2t-1 chaves
+
+Logo o numero de acesso a disco feito pelas operações de uma arvores é proporcional a altura da arvore
+
+Teorema: Se n>1 para toda arvorre-B T, com n chaves, altura h e grau minimo t > 2 entao:
+
+h<log((n+1)/2)
+
+-----------------------------------------------------------------------
+
+Agora será analisado três operações básicas:
+
+-busca
+-INSERÇÃO
+-CRIAÇÃO
+
+Busca:
+
+Funciona com uma busa binaria, mas ao inves de uma decisão binaria em cada nó, há mais decisões, especificamente x.n+1 decisões
+
+-Busca-Arvore(T.raiz,k), se k está na arvore, a busca retorna um par ordenado (y,i) constitindo de um nó y e um indice i, tal que y.ch[i] = k, senão
+retorna NULL
+
+
+Criação:
+
+Cria um nó vazio e depois insere-se as chaves, ambos os procedimentos ultilizam um procedimento auxiliar Aloca-No, que aloca uma página do disco para ser ultilizada
+como novo nó em tempo O(1)
+
+O algoritmo:
+
+Cria-Arvore-B(T){
+
+    x = Aloca-NO()
+    x.folha = TRUE
+    x.n = 0
+    Grava-Disco()
+    T.raiz  = x
+}
+
+
+Inserindo uma chave:
+
+Insere-se uma chave nova em um nó folha, caso esse nó folha estiver cheio, uma operação de divisão deve ser aplicada no nó.
+
+Um nó cheio y com 2t-1 chaves é dividido em sua chave mediana y.c[i], são criados dois nós com t-1 chaves.
+
+Se um nó precisar ser divido sua chave mediana é movida para seu nó pai, essa chave identificará no nó pai o ponto de divisão entre os dois nós filhos criados
+
+E se o nó pai estiver cheio, ele também deve ser dividido, assim o processo de divisão pode ocorrer até a raiz da arvore.
+
+Logo, caso o nó de inserção esteja cheio, é chamado o procedimento Divide-FILHO-Arvore-B()
+
+Divide-Filho-Arvore-B recebe com entrada um nó x não cheio e um indice i, tal que x.c[i] é um nó filho cheio de x
+
+O procedimento então divide o filho de x em dois, e faz ajustes em x, tal que ele possua um novo filho
+
+Logo uma chave é inserida em uma arvore b em uma unica passagem pela arvore, a raiz até a folha
+
+Não é preciso esperar até que se encontre a o nó que será dividio para a inserção da chave.
+
+-Conforme descemos na árvore a procura da posição de inserção dividimos todos os nós cheios que encontramos no caminho, assim sempre que dividios um nó cheio,
+temos a garantia de seu pai não ser um nó cheio.
+
+Para dividir um nó raiz cheio, primeiro faz com que a raiz seja filha de um novo nó raiz vazio, então ultiliza-se a função Divide-Filho, a altura da arvore B entao
+aumenta 1 nivel, a divisão é a unica maneira da arvore crescer, inicialmente o no cheio y = x.c[i] é dividio ultilizando sua chave mediana y.ch[i], e essa chave
+é movida para o pai x do nó y
+
+As chaves em y que são maiores do que a chave mediana y.ch[i] são movidos paa um novo nó z, que se torna um novo filho de x.
+
+Algoritmo para divisão de um no:
+
+Divide-Filho-Arvore-B(x,i){
+
+    z = Aloca-No()
+    y = x.c[i]
+
+    z.folha = y.folha
+    z.n = t-1
+
+    for(int j=1,j<z.n;j++)
+        z.ch[j] = y.ch[j+t]
+
+    if(!y.folha){
+        for(int j=1;j<t;j++)
+            z.c[j] = y.c[j+t]
+    }
+
+    y.n = t-1
+
+    for(j=x.n +1 ; j > i+1 ; j--){
+
+        x.c[j+1] = x.c[j]
+    }
+
+    x.c[i+1] = z
+    for(j=x.n;j>i;j--)
+        x.ch[j+1] = x.ch[j]
+
+    x.ch[i] = y.ch[t]
+
+    x.n = x.n + 1
+
+    Grava-Disco(y)
+    Grava-Disco(z)
+    Grava-Disco(x)
+}
+
+
+Algoritmo para inserção de uma chave, que ferá uso do algoritmo de divisão:
+
+Insere-Arvore-B(T,k){
+
+    r = T.raiz
+    if(r.n == 2t-1){
+        s = Aloca-No()
+        T.raiz = sãos.folha = FALSE
+        s.n = 0;
+        s.c[i] = r
+        Divide-Filho-Arvore(s,1)
+        Insere-Arvore-B-NaoCheio(s,k)
+    }
+
+    else
+        Insere-Arvore-B-NaoCheio(r,k)
+
+}
+
+Uma chave k é inserida em uma arvore-B de altura h em uma unica passada pela arvore, O(h) acessos a disco, o tempo de CPU requerido é O(th) = O(tlog(n))
+
+
+Algoritmo para inserção em nó nao cheio
+
+Insere-Arvore-B-NaoCheio(x,k){
+
+    i = x.n
+    if(x.folha){
+
+        while(i >= i && k < x.ch[i]){
+            x.ch[i+1] = x.ch[i]
+            i -= 1
+        }
+
+        x.ch[i+1] = k
+        x.n = x.n + 1
+        Grava-Disco(x)
+    }
+
+    else{
+
+        while(i >= 1 && k < x.ch[i])
+            i -= 1
+
+        i += 1
+        Le-Disco(x.c[i])
+
+        if(x.c[i].n == 2t-1){
+            Divide-Filho-Arvore-B(x,i)
+            if(k > x.ch[i])
+                i += 1
+        }
+        Insere-Arvore-B-NaoCheiao(x.c[i],k)
+    }
+}
+
+Fzer o exercicio depois;
+
+
+Removendo uma chave da árvore-B:
+
+Deve ser garantido que uma chave não seja removida de um nó já com o numero minimo de chaves, assim o procedimento de remoção de uma chave k, garante que
+toda vez que ele for chamado recursivamente em um nó x, o número de chaves de x seja no mímo igual a t.
+
+
+Arvores B* e B+, variações das arvores B:
+
+Foram propostas para melhorar o desempenho das arvores B;
+
+COmo cada no da arvore B representa um bloco de memoria secundaria, assim quanto menos nós forem criados, melhor, dessa forma, a Arvore-B* é uma variação
+da arvore-B, exigindo que todos os Nós, exceto a raiz, estejam pelo menos 2/3 cheios.
+
+A frequencia de divisão é então diminuida, atrasando-se uma divisão, quando for dividir, divide-se dois nós em três, e não um nó em dois, como na arvore-B, assim
+a ultilização média é de 81%, logo uma divisão de uma arvore-B* é atrasada tentando redistribuir as chaves entre um nó e seu irmão quando o nó transborda.
+
+O número de chaves k tem todos os nós não raiz de uma arvore-B* de ordem t, é dado por:
+
+|(2t-1)/3 *2| < k < 2t-1
+

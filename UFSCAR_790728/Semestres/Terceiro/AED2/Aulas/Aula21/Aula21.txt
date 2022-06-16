@@ -1,0 +1,89 @@
+Grafos: Tipos, implementação e construção aleatoria
+
+Grafos são uma estrutura matematica muito estudada, e um TAD usado para representar relações entre elementos de um conjunto, como todo TAD, precisa ser implementado
+por alguma estrutura de dados
+
+Grafos são formados por dois componentes, um conjunto de vétices ou nós V, e um conjunto de pares de vértices E, caso estes pares são não ordenados, são
+chamados de arestas e o grafo é dito não orientado.
+
+Agora se os pares são ordenados, eles são chamados de arcos, e o grafo é dito orientado(ou dirigido)
+
+Em geral, grafos são representados compactamente como G = (V,E), e usamos :
+n = |V| para indicar o numero de vértices
+m = |E| para indicar o número de arestas
+
+Grafos modelam relações entre pares de um mesmo conjunto, ou relações entre pares de conjuntos relacionados, o que abre muitas possibilidades
+
+Densidade de grafos:
+
+Grafos podem ser densos ou esparsos, que diz respeito ao seu número de arestas, um grafo não orientado, conexo e sem arestas múltiplas possui no mínimo, n-1
+arestas, no caso em que o grafo é uma arvore
+
+Já o máximo de arestas é n escolhe 2 = n(n-1)/2 arestas, que é o caso de um grafo completo.
+
+Logo, um grafo orientado completo tem n(n-1) arcos, isto é, o dobro do grafo não orientado, pois entre cada para de vértices podem ter dois arcos em setidos
+opostos.
+
+
+Assim, aproximadamente, o numero de arestas de um grafo varia entre O(n) e O(n²)
+
+Um grafo é esparso quando seu número de arestas está proximo a n ou até n * lg(n)
+
+Um grafo é denso, quando seu numero de arestas está próximo de n² ou pelo menos superior a n^(3/2) = n * n^(1/2)
+
+Duas principais implementações para grafos, isto é duas estruturas de dados usadas para representá-los, em ambas os vértices são rotulados por inteiros
+não negativos
+
+Matriz de adjacência:
+
+Ultiliza uma matriz A de 0s e 1s, com n linhas de n colunas, sendo que o valor da célula A[i][j], indica se existe uma aresta entre os vértices i e j
+
+A linha i da matriz A representa o leque de de saída do vértice i, e a coluna A representa o leque de entrada do vértice j, a diagonal principal da matriz,
+é preenchida por 0s, visto que não ocorre auto-laços.
+
+Se o grafo não for orientado, a matriz é simétrica, logo A[i][j] = A[j][i], visto que as arestas não contém direção
+
+Listas de adjacência:
+
+Esta implementação ultiliza um vetor A de apontadores de vértices de tamanho n, e para cada vértice i, temos uma lista ligada, iniciada em A[i], com os destinos
+das arestas que tem origem em i.
+
+Ou seja, temos um vetor de apontadores, que aponta para uma lista ligada, que não necessariamente precisa estar ordenada, contendo os vertices que são apontadores
+
+Se o grafo não for orientado, dada uma aresta {i,j}, temos que j será inserido na lista de i, e i será inserido na lista de j, pois a aresta não tem direção.
+
+Comparação entre as duas estruturas de dados:
+
+
+Matriz de adjacencia:
+
+Vantagens:
+
+-Acessar um elemento A[i][j] qualquer leva tempo constante, economia de espaço, quando o grafo é denso, pois é possível operar sobre uma matriz de bits
+
+Desvantagens:
+
+Ocupa espaço proporcional a n² ainda que o grafo seja esparso, resultando na maioria dos elementos da matriz iguais a zero
+Visitar todos os nós para os quais um nó i tem conexão leva tempo proporcional a n, ainda que i tenha poucos vizinhos
+O mesmo vale para visitar todos os nós que tem conexão para i
+
+Lista de adjacência:
+
+Vantagens:
+
+-Economia de memoria quando o grafo é esparso, pois ocupa espaço proporcional a n + m, sendo n o número de nós e m o número de arestas
+
+-Visitar todos os nós para os quais um nó i tem conexão, leva tempo proporcional ao numero de de vizinhos de i
+
+Desvatangens:
+
+-Verificar se um nó tem conexão para um nó j leva tempo linear no número de vizinhos do nó i, quando o grafo é denso a ordem de grandeza, tanto da memória
+quanto do tempo serão quadráticos, e a memoria ocupada por conexão é maior que na matriz
+
+-Verificar quais nós tem conexão para um nó j exige percorrer todas as listas, para contornar essa limitação podemos usar listas ortogonais.
+
+
+Por que a construção de grafos aleátorios, é util para construir grafos esparsos grandes, mas é ineficiente paa construir grafos densos?
+
+-O problema é na função insereGrafo, pois a cada vez mais, temos os arcos v,w e isso faz com que ocorra muitas colisões, o que deixa o algoritmo um pouco lento
+já que ele fará muito mais operações do que o desejado

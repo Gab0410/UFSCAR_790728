@@ -1,0 +1,3 @@
+->Para demonstrar a similharidade com a linguagem C, no arquivo de texto "exemplo1.cpp" está um código em C++, que recebe 3 notas de um aluno e faz a média 
+entre elas;
+->Em C++, o uso do tipo de variavel const, é exemplificado no "exemplo1.cpp", que funicona como um #define;

@@ -1,0 +1,58 @@
+->No exemplo do livro, é possivel analisar que há a possibilidade de apontar um ponteiro da classe base para um objeto da classe derivada, entretanto, não há 
+como apontar um ponteiro da classe derviada para um objeto da classe base, isso acontece pois muitas vezes, a classe derivada contém método e atributos diferentes
+dessa forma não há como realizar esses métodos sem os valores para os atributos, e dessa forma resulta em um erro de compilação.
+
+->Além disso caso um ponteiro de classe base, tente apontar a um endereço da classe derivada, isso pode,, mas ao tentar acessar funçoes exclusivas da classe
+derivda, isso irá gerar um erro de compilação.
+
+->O exemplo de comissao, feito, poderia ser reinplementado com o uso de "virtual", nesse caso, as funções print e earnings receberiam esse tipo de dado,
+e nesse caso a decisão seria tomado em tempo de execução, seria decidido de acordo com o handle que chama a função.
+
+->Para conseguir alterar o valor de um atributo em tempo de execução com eficiencia e sem chance de erros, deve-se usar o dynamic cast, para ter efetividade
+na alteração desejada, entretando essa alteração deve ser feita por um ponteiro, e usando os métodos/funções que tem permissão para alterar determinado atributo
+
+<Nome classe> <*ponteiro> = dynamic_cast<Nome_Classe *>(outro_ponteiro)
+->Esse outro ponteiro deve ser um previamente criado, como um objeto da mesma classe desejada
+
+->Logo não é possivel atribuir um ponteiro de classe base a um ponteiro de classe derivada sem o uso do dowcast/dynamic_cast
+
+->Nesse capitulo, entende-se que o polimorfismo permite uma programação mais abrangente e não se restringir ao especifico
+
+
+Templates:
+
+->Templates de função:
+
+->Igualmente a sobrecarga de funções, os templates funcionam para generalizar, mas nesse caso generalizam o tipo de retorno/entrada e não a operação em si,
+caso uma função que tenha retorno T e entradas T, e que faça a soma de dois tipo T + T, fará essa soma para todos os tipos de dados, ou seja caso T for float,
+irá ocorrer uma soma, caso T for int, irá ocorrer uma soma, dessa forma os templates de função sobrecarregaram os métodos, mas não alteral a operação que será
+efetivada, apenas os tipos de dados recebidos/retornados
+->Diferentemente dos macros, os templates evitam possiveis erros, que causariam muito dano, e evitariam a reultilização do software
+
+->Para utltilizar um template, há tres jeitos possiveis para a implementação:
+
+-template<typename T>
+-template<class Funcionario>
+-template<typename G, typename F>
+
+->Geralmente com o uso de templates, o programador evita de efetuar 3 funções diferentes para a mesma funçaõ, mas com tipos diferentes de dados, dessa forma
+além do código ficar mais limpo, ainda tem-se a maior possibilidade da reultilização do software
+
+->É possivel sobrecarregar uma função com templates, entretando deve-se ter cuidado para não gerar uma implementação ambigua, e que não será compilada pelo
+compilador, gerando uma mensagem de erro
+
+->Templates de classe:
+
+->Exemplo de Stack
+
+->Templates vazios:
+
+->Esse tipo de template, pode ser bastante util para generalizações, por exemplo, ao declarar um template como: "template<typename T, int elements>", o compil-
+ador sugere, que o primeiro tipo será indefinido e o segundo deve ser int, ou seja ao declarar um objeto de uma classe pode-se efetuar o seguinte comando:
+"<nome-classe><(tipo_dado),(valor inteiro)><nome-objeto>" e dessa forma será instanciado um objeto, com este valor inteiro.
+
+->Outro tipo de ultilização de templates é essa: template<typename T=string>, dessa forma, o tipo padrao de inicialização é a string ou seja, caso o objeto
+seja instanciado desta forma: <nome-classe><><nome-objeto>, o tipo padrão a ser usado será a string, funciona como um parametro default nos métodos
+
+
+->Estudar sobre a biblioteca vector/alghoritm no domingo/Sabado

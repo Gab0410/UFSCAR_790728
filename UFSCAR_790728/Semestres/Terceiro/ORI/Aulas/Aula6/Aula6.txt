@@ -1,0 +1,128 @@
+Hash tables:
+
+Sobre as hash tables serão aplicados três operações, inserção, remoção e busca, o objetivo é realizar operações em tempo constante, O(1)
+
+A pesquisa de valores é muito simples, ultiliza-se a função hash para localizar uma posição na tabela, entretanto, dois valores podem se colidir e isso acontece
+com muita frequencia, mesmo que a função hash distribua os registros de maneira uniforme, haverá muitas colisões, e dessa forma, deve se tratar desse caso,
+o caso da existencia de colisões.
+
+O método mais ultilizado é o resto da divisão por M, m deve ser um numero primero, mas não um qualquer, deve-se evitar potencias de 2, e devem ser evitados
+números primos obtidos a partir de b^i +- j, em que b é a base do conjunto de caracteres e i e j, são pequenos inteiros.
+
+As chaves não numéricas devem ser transformados em números:
+
+k = somatoria de 1 até n, chave[i] * p[i]
+
+Em que n é o numero de caracteres da chave, chave[i] é a representação ASCII do i-esimo caractere da chave, e p[i] é um inteiro de um conjunto de pesos gerados
+randomicamente
+
+Ex:
+
+h(k) = k % m
+
+m=7
+
+Armazenar L,U,A
+
+h(L) = h(12) = 5
+h(u) = h(21) = 0
+h(A) = h(1) = 1
+
+Qual a vantagem: Se K é o conjunto de chaves armazenadas a tabela requer espaço O(|K|)
+
+Desvantagens:colisões
+
+Como evitar colisões:
+
+O número de colisões não pode ser muito grande, o número de colisões depende de como a função de hash h espalha os elementos na tabela, logo deve-se escolher
+uma função deterministica, mas com saída aparentemente aleátoria.
+
+Mas esse metodo irá apenas minimizar o número de colisões, logo deve existir um algoritmo para mapear o valor para tratar as colisões.
+
+No encadeamento, todos os elementos que são mapeados para uma mesma posição são alocados em uma lista ligada.
+
+Inserir na cabeça da lista, tratar como uma pilha.
+
+No inicio da execução, pode-se escolher aleatoriamente uma função de hash de uma classe H de funções deterministicas, uma classe H de funções hash é universal,
+se o número de funções é no máximo |H|/m, tal que m é o tamanho da hash table
+
+
+
+Endereçamento Aberto:
+
+->Quando o nro de registros a serem armazenados puder ser previamente estimado, não há necessidade de usar ponteiros para armazenar os registros.
+
+-Nesse Endereçamento todas as chaves são armazenadas na propria tabela sem o uso de ponteiros, a colisão é tratada com a busca de uma nova posição para inserção,
+até se encontrar uma posição livre.
+
+A inserção deve modificar a função hash, para receber o numero do teste como argumento.
+
+
+A busca percorre a mesma sequencia examinada pea inserção quando a chave k foi inserida.
+
+
+Remoção: A remoção é mais dificil, quando uma chave é deletada de uma posição i, não podemos simplesmente marcar aquela posição como vazia, se fizermos isso,
+pode ser impossível recuperar uma chave que no momento foi inserida, e encontrou a posição i ocupada
+
+-Esse problema pode ser resolvido inserindo um valor especial REMOVIDA no lugar da chave removida.
+
+-Na inserção deve-se tomar cuidado com a inserção , para nao ocorrer overflow, e caso ocorra, deve se tratar a hash table, como uma lista circular, que caso um valor
+nao consiga ser inserido até o final, deve se reiniciar o indice.
+
+O hashing linear é simples de implementar, mas sofre de um problema chamado agrupamento primário, visto que no caso de múltiplas colisões, as chaves tendem a ficar
+muito próximas, e não há um grande espalhamento.
+
+
+-Endereçamento aberto:Teste quadrático
+
+A vantagem é que é imune ao agrupamento primário.
+
+A desvantagem é que não é imune ao agrupamento secundário.
+
+Ex:
+
+Função h(k,i) = (h'(k) + i + 3i²) % 11
+
+
+-Endereçamento aberto:Duplo mapeamento
+
+Sejam h1 e h2 funções hash auxiliares, tal que a função h é definida como
+
+h(k,i) = (h1(k)+ ih2(k)) % M
+
+É preciso que h2 e m sejam relativamente primos, ou seja, escolhe-se m = 2^p e h2(k) com saída sempre impar ou, escolhe-se m primo e h(k) com saída
+sempre menor que m
+
+Ex:
+
+h1(k) = k % m e h2(k) = 1 + (k % m')
+
+O valor de m' é escolhido para ser menor do que m
+
+Vantagem: Considera O(m²) sequencias de teste, já que cada par produz uma nova sequencia, enquanto o teste linear e quadrático consideram apenas O(m)
+sequencias
+
+Desvantagem: Mais complexo de se implementar
+
+
+Hashing Perfeito:
+
+Quando o conjunto K de chaves é estático, pode-se usar tabelas hash com alto desempenho mesmo no pior caso.
+
+Ex: Conjunto de palavras reservadas de uma linguagem de programação
+
+
+Um metodo de mapeamento é chamado perfeito quando o numero de acesso à memoria necessários para uma busca é O(1) no pior caso
+
+Entretanto:
+
+Projetar uma função de mapeamento em que todas as buscas tomem tempo constante no pior caso
+
+Para isso deve-se ultilizar um esquema com mapeamento em dois niveis e mapeamento universal em cada nivel
+
+No primeiro nivel é identico a uma tabela hash encadeada, as n chaves são mapeadas para m posições por uma função de hash h universal
+
+No lugar de uma lista de chaves que colidem na posição i, usa-se uma tabela hash secundária Si com uma função associada a hi a escolha de hj é que permite
+impedir colisões no segundo nível
+
+O tamanho mj da tabela hash Sj deve ser o quadrado da quantidade nj de chaves mapeadas para a posição j

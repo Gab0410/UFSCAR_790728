@@ -1,0 +1,46 @@
+Caminhos ponderados em DAGs e em grafos sem custos negativos
+
+Quando os caminhos são ponderados isso signifia que cada arco tem um custo, ou seja, ao inves de 1, pode ser 2,3,5...
+
+Na busca, continua-se recebendo um vertice origem s, e um  grafo G, e cada aresta te um custo.
+
+O objetivo continua ser encontrar o caminho mínimo de s a v, e também seria util que os caminhos fossem devolvidos
+
+A busca em largura realizada na ultima aula, não calcular o menor tamanho possível , pois só funciona para grafos nao ponderados, no caso de grafos ponderados
+o algoritmo não funciona corretamente.
+
+Uma possḱivel abordagem seria dividir o caminho em varios vertices, para que cada aresta tenha apenas 1 de peso, entretanto caso o peso for muito grande,
+o algoritmo se torna muito ineficiente, e pesos grandes em caminhos é muito recorrente, visto que grafos são importantes para relacionar cidades, ou até
+países.
+
+O grafo modificado pode crescer exponenencialmente, pois um custo que é representado usando k de bits, pode implicar da ordem de 2^k novos vértices.
+
+Caminhos mínimos ponderados em DAGs:
+
+Sendo s nosso vértice origem, considerando todos os caminhos a partir de s, que chegam em um vértice v, e escolhermos o menor destes caminhos, teremos o caminho
+de custo mínimo de s a v, e o valor deste caminho é a distancia desejada, em geral considerar todos os caminhos não é eficiente, pois o número de caminhos crescer
+fatorialmente, e a ideia central do algoritmo é encontrar uma ordem, para visitar os vértices do DAG que nos permite encontrar eficientemente todos os caminhos
+que chegamo em cada vértice, que é uma ordenação topológica.
+
+
+
+Algoritmo de Dijkstra:
+
+Algoritmo de Dijkstra para calculos de distancias, ou seja, caminhos minimos ponderados em grafos gerais
+
+Supor que todos os vertices do grafo, são alcançaveis a prtir do  vértice s, se isso não for verdade, é simples tratar desse caso, para isso, realiza-se uma busca
+incial a partir de s, e foca-se a busca apenas no conjunto de vértices desejados
+
+Disjktra(G,c,s)
+
+    para todo vEV faca dist[v] = inifinito e pred[v] = NULL
+    dist[s] = 0
+    R = {}
+    enquanto R != V
+        pegar v E V \ R com menor dist dist[v] //greedy alghorithm, escolha gulosa
+        adiciona v a R //marcado como visitado
+        para toda aresta (v,w)
+            se(w nao esta em R)
+                se dist[w] > dist[v] + custo(v,w)
+                    dis[w] = dist[v] + c(v,w)
+                    pred[w] = v

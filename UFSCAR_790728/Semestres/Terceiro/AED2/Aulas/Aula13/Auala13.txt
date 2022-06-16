@@ -1,0 +1,33 @@
+Limitante inferior para a ordenação:
+
+-Baseada em comparações
+
+-Obtem, informações sobre a sequenica sendo ordenada, atráves de uma função de comparação que recebe dois elementos e diz qual deles é maior
+
+-Primeira é o numero de combinações que uma sequencia de tamanho n pode apresentar: n!
+
+-Segundo, o numero de sequencias que um algoritmo consegue distinguir, após realizar k comparações.
+
+
+-Com a comparação divide-se o espaço de busca em duas metades, logo, o número de sequencias identificadas dobra, assim no melhor caso, é possível identificar
+no máximo 2^k sequencias diferentes
+
+-Pode-se ultilizar uma arvore binária de decisão, na qual cada nó correspondente a uma comparação, uma folha corresponde a uma sequencia
+
+-A altura dessa forma portanto, corresponde a um limitante inferior, para a complexidade de tempo de pior caso do algoritmo.
+
+Com os calculos, é possível descobrir que qualquer algortimo de ordenação baseado apenas em comparações precisar realizar pelo menos da ordem de n*logn comparações
+para ordenar uma sequencia com n elementos.
+
+
+-Bucket Sort:
+
+
+É um método eficiente para ordenar um conjunto com n números, distribuidos uniformemente num intervalo de tamanho k
+
+Ideia do algoritmo:
+
+-Primeiro dividimos o intervalo de tamanho k em n baldes, associando a cada balde uma fração do interval de tamanho k/n
+
+-Após o intervalo estar dividido, coloca-se cada numero em seu respectivo balde, e em seguida, ordena=-se os elementos de cada balde, e por fim percorre-se
+os baldes em ordem, e os elementos de cada balde, também em ordem, copiando eles de volta para o vetor original.

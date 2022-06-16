@@ -1,0 +1,231 @@
+O que é um objeto?
+- Um objetoé uma entidade do mundo real que tem uma identidade
+-Em programação cria-se uma classe que possibilitará a criação de objetos
+-Objetos serão instanciais das classes
+-Objetos diferentes podem representar a mesma coisa, mas cada um será único
+-Esses objetos tem caracteristicas definidas, e podem realizar ações, Ex:Carrinho de controle remoto
+-Nesse caso, as caracteristicas, sao: cor,tem pilha, peso, velocidade maxima, etc...
+-E suas ações(métodos), são: ir pra frente, ir pra tras, trocar as pilhas, ligar, desligar, etc...
+
+Carrinho de controle remoto:
+
+Atributos: cor, velocidade maxima, peso
+
+Métodos: liga, desliga,troca pilha, anda pra frente
+
+Como fazer um código:
+
+CARRO Rubinho, Massa
+Massa.marca = "Ferrari";
+Massa.cor = "vermelho";
+Massa.correr()
+Rubinho.andar()
+
+Caracterisiticas de programação orientada à objetos:
+-Proteção dos dados
+-Integridade dos dados
+-Generalização de operações
+-Polimorfismo
+
+Unidade 1:
+->Linguagem Imperativa:
+    ->Contém estruturas de controle(repetição e condição)
+    ->Entrada e saída de dados
+    ->Tratatamento de erros e de exceções
+    ->Abstração procedural
+    ->Expressões e comandos de atribuição
+    ->Bibliotecas de Apoio
+->Logo, os paradigmas da programação orientada a objetos, contempla esse conceito.
+->Dentro dessa ideia, surge a programalao estruturada, que visa deixar o código mais legivel, mais organizado e mais otimizado
+->No passado, embora já tivesse a ideia de programação estruturada, os codigos eram muito extensos, inseguros, e não eram reusáveis, gerando altos
+orçamentos, e muita instatisfação por parte dos clientes.
+
+->Visibilidade:
+    ->Em programação orientada a objetos, como se preza pela proteção dos dados, um objeto pode ser visível como pode estar escondido, ou seja, relacionando 
+    a uma cápsula, que é dividida em duas partes, a parte transparente, em que se ve internamente, e a outra parte, que não é visível, pois está propositalmente
+    escondida
+->Vantagens do encapsulamento:
+    ->Não permite o acesso direto ao sistema pelo usuario, facilitando o uso, ja que há uma abstração;
+    ->Composição:Exemplo:Computador, que contem diversa placas dentro de sistema
+
+Unidade 3:
+->Com o aumento da complexidade dos sistemas e a necessidade cada vez mais de reuso de códigos já implementados, surgiu a necessidade de um novo paradigma de
+programação orientada a objetos que trouxesse mais felxibilidade e segurança na tarefa de codificação e mais economia para industrias de software
+->Uma linguagem, orientada a objetos, precisa implementar 4 conceitos básicos:
+    ->Abstração: Habilidade de modelar caracteristicas do mundo real
+    ->Encapsulamento:habilidade da unidade de proteger os dados, e permitir que apenas suas operações internas acessem eles
+    ->Herança: Mecanismo que permite: 
+        ->A criação de novos objetos por meio da modificação de algo já existente
+        ->Vinculo do objeto criado com o objeto antigo
+    ->Polimorfimso: Capacidade da unidade de ter várias formas
+
+->Classes e Objetos:
+    ->Classe é um modelo de um objeto, como por exemplo um carimbo
+    ->Objeto é a concretização da classe, como por exemplo quando o carimbo é usado junto a tinta, logo uma instancia da classe
+    ->Um objeto possui métodos e atributos,Ex: Sendo um objeto uma empilhadeira, seus métodos são suas ações  ex: ANDAR PRA FRENTE, seus atributos
+    são as caracteristicas, ex:cor,peso, etc...
+
+->Elementos de uma classe:
+    ->As classes, se diferencias das structs, pois elas interferem na relação usuario programa, não permitindo certas ações do usuario, como por exemplo
+    um ar-condicionado onde a temperatura deve ficar entre 16-30, oque foi previamente programado pelo projetista, e impede que o usuario faça alterações 
+    indevidas.
+->Diagrama de classes:
+    ->Diagrama de classses de UML, com ele é possivel representar visualmente uma classe e também é possível, representar a relação entre elas.
+    ->Um retangulo com 3 partes, na parte superior tem-se o nome da classe, na intermediaria os atributos, e na inferior os métodos
+    ->Nome da classe deve ser em negrito e geralmente um substantivo, em que a primeira letra é maiuscula
+    ->Na parte intermediaria, tem-se os atributos ou caracteristicas da classe, alem disso deve-se especificar suas Visibilidade, que pode ser:
+        -> ~: as classes de um pacote podem ser usadas
+        -> +:público
+        -> #:protegido
+        -> -:privado
+    ->Normalmente, será visto os atributos tendo visibilidade privada, isso implica que somente os métodos da classe podem acessá-lo.Visibilidade privada
+    impede que os valores sejam acessados diretamente. Para alterar um atributo privada, é preciso que exista um método que todos possam acionar(público)
+    Ex:
+        -> +Nome : String = "Ednaldo"; -> o atributo é nome, e é do tipo String, e seu valor padrado é Ednaldo
+        -> +Idade : int = 43; ->o atributo é Idade, e é do tipo int, e seu valor padrao é 43
+        -> +fazer_aniversario(); -> método chamado fazer fazer_aniversario
+    ->Nota-se que ambos os métodos estão com o acesso público, e isso é importante para que os dados possam ser modificados. O método fazer_aniversario()
+    quando acionado, altera a idade, entretando se esse fosse privado não poderia ser acionado diretamente, ele será privado apenas em casos especiais
+    ->Exemplo:
+        ->Um método será privado apenas em casos especiais, uma impressora com alarme sonoro para indicar o baixo nível de tinta, o alarme deve ser
+        tocado quando houver baixo nível de tinta, e não quando o usuario desejar, logo o metodo imprimir_documento() da impressora iria automaticamente
+        diminuindo o nível de tinta do cartucho, até que atinja um nível crítico e acione o método alarme()
+    ->Continuando no exemplo da impressora:
+        
+        ->Atributos:
+        (esse "-" representa privado) -Cor : String
+        -Tipo : String
+        -Velocidade : int
+        -Capacidade : int
+        -Qualidade_impressao : char
+        -Nivel_reservatorio : float
+        -Estado : bool
+
+        ->Métodos:
+        +Imprimir()
+        +Trocar_suprimento()
+        +Ligar()O que é um objeto?
+- Um objetoé uma entidade do mundo real que tem uma identidade
+-Em programação cria-se uma classe que possibilitará a criação de objetos
+-Objetos serão instanciais das classes
+-Objetos diferentes podem representar a mesma coisa, mas cada um será único
+-Esses objetos tem caracteristicas definidas, e podem realizar ações, Ex:Carrinho de controle remoto
+-Nesse caso, as caracteristicas, sao: cor,tem pilha, peso, velocidade maxima, etc...
+-E suas ações(métodos), são: ir pra frente, ir pra tras, trocar as pilhas, ligar, desligar, etc...
+
+Carrinho de controle remoto:
+
+Atributos: cor, velocidade maxima, peso
+
+Métodos: liga, desliga,troca pilha, anda pra frente
+
+Como fazer um código:
+
+CARRO Rubinho, Massa
+Massa.marca = "Ferrari";
+Massa.cor = "vermelho";
+Massa.correr()
+Rubinho.andar()
+
+Caracterisiticas de programação orientada à objetos:
+-Proteção dos dados
+-Integridade dos dados
+-Generalização de operações
+-Polimorfismo
+
+Unidade 1:
+->Linguagem Imperativa:
+    ->Contém estruturas de controle(repetição e condição)
+    ->Entrada e saída de dados
+    ->Tratatamento de erros e de exceções
+    ->Abstração procedural
+    ->Expressões e comandos de atribuição
+    ->Bibliotecas de Apoio
+->Logo, os paradigmas da programação orientada a objetos, contempla esse conceito.
+->Dentro dessa ideia, surge a programalao estruturada, que visa deixar o código mais legivel, mais organizado e mais otimizado
+->No passado, embora já tivesse a ideia de programação estruturada, os codigos eram muito extensos, inseguros, e não eram reusáveis, gerando altos
+orçamentos, e muita instatisfação por parte dos clientes.
+
+->Visibilidade:
+    ->Em programação orientada a objetos, como se preza pela proteção dos dados, um objeto pode ser visível como pode estar escondido, ou seja, relacionando 
+    a uma cápsula, que é dividida em duas partes, a parte transparente, em que se ve internamente, e a outra parte, que não é visível, pois está propositalmente
+    escondida
+->Vantagens do encapsulamento:
+    ->Não permite o acesso direto ao sistema pelo usuario, facilitando o uso, ja que há uma abstração;
+    ->Composição:Exemplo:Computador, que contem diversa placas dentro de sistema
+
+Unidade 3:
+->Com o aumento da complexidade dos sistemas e a necessidade cada vez mais de reuso de códigos já implementados, surgiu a necessidade de um novo paradigma de
+programação orientada a objetos que trouxesse mais felxibilidade e segurança na tarefa de codificação e mais economia para industrias de software
+->Uma linguagem, orientada a objetos, precisa implementar 4 conceitos básicos:
+    ->Abstração: Habilidade de modelar caracteristicas do mundo real
+    ->Encapsulamento:habilidade da unidade de proteger os dados, e permitir que apenas suas operações internas acessem eles
+    ->Herança: Mecanismo que permite: 
+        ->A criação de novos objetos por meio da modificação de algo já existente
+        ->Vinculo do objeto criado com o objeto antigo
+    ->Polimorfimso: Capacidade da unidade de ter várias formas
+
+->Classes e Objetos:
+    ->Classe é um modelo de um objeto, como por exemplo um carimbo
+    ->Objeto é a concretização da classe, como por exemplo quando o carimbo é usado junto a tinta, logo uma instancia da classe
+    ->Um objeto possui métodos e atributos,Ex: Sendo um objeto uma empilhadeira, seus métodos são suas ações  ex: ANDAR PRA FRENTE, seus atributos
+    são as caracteristicas, ex:cor,peso, etc...
+
+->Elementos de uma classe:
+    ->As classes, se diferencias das structs, pois elas interferem na relação usuario programa, não permitindo certas ações do usuario, como por exemplo
+    um ar-condicionado onde a temperatura deve ficar entre 16-30, oque foi previamente programado pelo projetista, e impede que o usuario faça alterações 
+    indevidas.
+->Diagrama de classes:
+    ->Diagrama de classses de UML, com ele é possivel representar visualmente uma classe e também é possível, representar a relação entre elas.
+    ->Um retangulo com 3 partes, na parte superior tem-se o nome da classe, na intermediaria os atributos, e na inferior os métodos
+    ->Nome da classe deve ser em negrito e geralmente um substantivo, em que a primeira letra é maiuscula
+    ->Na parte intermediaria, tem-se os atributos ou caracteristicas da classe, alem disso deve-se especificar suas Visibilidade, que pode ser:
+        -> ~: as classes de um pacote podem ser usadas
+        -> +:público
+        -> #:protegido
+        -> -:privado
+    ->Normalmente, será visto os atributos tendo visibilidade privada, isso implica que somente os métodos da classe podem acessá-lo.Visibilidade privada
+    impede que os valores sejam acessados diretamente. Para alterar um atributo privada, é preciso que exista um método que todos possam acionar(público)
+    Ex:
+        -> +Nome : String = "Ednaldo"; -> o atributo é nome, e é do tipo String, e seu valor padrado é Ednaldo
+        -> +Idade : int = 43; ->o atributo é Idade, e é do tipo int, e seu valor padrao é 43
+        -> +fazer_aniversario(); -> método chamado fazer fazer_aniversario
+    ->Nota-se que ambos os métodos estão com o acesso público, e isso é importante para que os dados possam ser modificados. O método fazer_aniversario()
+    quando acionado, altera a idade, entretando se esse fosse privado não poderia ser acionado diretamente, ele será privado apenas em casos especiais
+    ->Exemplo:
+        ->Um método será privado apenas em casos especiais, uma impressora com alarme sonoro para indicar o baixo nível de tinta, o alarme deve ser
+        tocado quando houver baixo nível de tinta, e não quando o usuario desejar, logo o metodo imprimir_documento() da impressora iria automaticamente
+        diminuindo o nível de tinta do cartucho, até que atinja um nível crítico e acione o método alarme()
+    ->Continuando no exemplo da impressora:
+        
+        ->Atributos:
+        (esse "-" representa privado) -Cor : String
+        -Tipo : String
+        -Velocidade : int
+        -Capacidade : int
+        -Qualidade_impressao : char
+        -Nivel_reservatorio : float
+        -Estado : bool
+
+        ->Métodos:
+        +Imprimir()
+        +Trocar_suprimento()
+        +Ligar()
+        +Desligar()
+        -Alarme()
+
+->Relacionamento entre classes:
+    -> Herança: Uma classe, herda Caracterisiticas de uma classe mais genérica."Um cachorro é um mamífero", indica que cachorro herda Caracterisiticas
+    de uma classe mais genérica que é mamífero
+    -> Composição: Reconhecido pela relação "tem", ex: um carro "tem" uma direção, "tem" 4 rodas, etc...
+        -> Ou um funcinario "tem" data de nascimento, departamento, logo "data de nascimento" é um atributo do tipo data
+    ->Tatno com herança quanto com Composição é possivel fazer reuso de classes já criadas.
+        +Desligar()
+        -Alarme()
+
+->Relacionamento entre classes:
+    -> Herança: Uma classe, herda Caracterisiticas de uma classe mais genérica."Um cachorro é um mamífero", indica que cachorro herda Caracterisiticas
+    de uma classe mais genérica que é mamífero
+    -> Composição: Reconhecido pela relação "tem", ex: um carro "tem" uma direção, "tem" 4 rodas, etc...
+        -> Ou um funcinario "tem" data de nascimento, departamento, logo "data de nascimento" é um atributo do tipo data
+    ->Tatno com herança quanto com Composição é possivel fazer reuso de classes já criadas.

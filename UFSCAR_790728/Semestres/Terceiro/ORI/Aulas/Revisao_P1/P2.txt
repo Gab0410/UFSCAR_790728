@@ -1,0 +1,10 @@
+1.Apenas as afirmativas 2 e 3 são corretas.
+2.Nós não folha possuem ponteiros para os registros
+3.A, tem print
+4.7
+5.Os comprimentos dos caminhos entre o nó raíz e todas as folhas são os mesmos
+6.Nó1=[11,12] Nó2=[14,15,16,18] Nó3=[22,23] Nó4=[27,29,32] Nó5=[34,35,36]
+7.Indice esparso
+8.D
+9.3
+10. Nó1=[11,12] Nó2=[14,15,16,18] Nó3=[22,23] Nó4=[26,27,28] Nó5=[30,32] Nó6=[34,35,36]

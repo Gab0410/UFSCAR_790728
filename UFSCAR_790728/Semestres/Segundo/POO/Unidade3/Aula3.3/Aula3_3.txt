@@ -1,0 +1,46 @@
+Aula 3.3:
+
+=>Tanto em Java quanto em C++, é possivel dimensionar o espaço ultilizado em memoria atraves da 
+alocação 
+
+=>Em c++ o programador é responsavel por devolver o recurso coletado, ou seja por liberar a memoria
+previamente alocada
+
+=>Em c++ deve-se usar os operadores new e delete
+
+Como usá-los?:
+
+=>Operador new:
+    Hora *HoraPtr;
+    HoraPtr = new Hora;
+
+=>O new cria objeto do tamanho apropriado, e caso não houver memoria suficiete resulta em um erro,
+chama o construtor padrao, e retorna um ponteiro do tipo especificado
+
+=>INICIALIZAÇÃO:
+
+double *ptr = new double(3.14169);
+Hora *HoraPtr = new Hora(12,0,0);
+
+=>Alocação de arrays
+
+int *meuArray = new int[10];
+
+=>Operador delete:
+
+->Destroi dinamicamente objetos alocados, liberando o espaço
+->Um exemplo seria: delete HoraPtr;
+->Esse operador chama o destrutor para o objeto, liberando a memoria associada ao objeto, e dessa forma
+esse objeto pode ser reultilizado
+
+=>Para arrays, pode se ussar: delete [] meuArray;
+
+Exemplo:
+=>O arquivo exemplo1.cpp , é um exemplo de alocação em C++, com o uso de new e delete, e também, 
+o uso de classes.
+
+Conclusões:
+
+=>Usar new e delete, é semelhante ao uso de malloc, calloc e free. O mais importante é saber como o 
+processo de alocação acontece e nunca esquecer de devolver o que foi emprestado, em C++ ultiliza o 
+operador delete, para liberar a memoria alocada ao final do programa.

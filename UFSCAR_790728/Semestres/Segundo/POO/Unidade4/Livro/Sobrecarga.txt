@@ -1,0 +1,67 @@
+Sobrecarga:
+
+->Alguns operadores do C++ standart library já são sobrecarregador, pois
+podem excercer mais de uma função dependendo do tipo de parametro ou dado,
+por exemplo "<<" representa um controle de fluxo, um printf, ou também um deslocamento
+de bits para direita, logo este operador está sobrecarregado.
+
+->Dessa forma, entende que sobrecarga de operadores, nada mais é que pegar um operador
+pedrão do C++ , e fazer com que ele excerça outra função, por exemplo,
+podemos realizar somas de matrizes com o operaodr +, basta sobrecarregá-lo para
+isso
+
+->O c++ não permite que o programdor crie novos simbolos/operadores, mas possibilita
+uma ressignificação de um operando, por exemplo podemos sobrecarregar o operador -, para
+fazer uma operação de transposição de matriz.
+
+->Os operadores ">>" e "<<" devem ser sobrecarregador em funções globais, pois
+como o eles são do tipo ostream & e nao da classe do objeto, isso afetaria o desempenho
+do codigo, logo é uma boa pratica, colocá-las como friend da classe, e como funções
+globais
+
+->Para sobrecarregar um operador unitário, pode-se usar usar tanto funções
+globais, como funçoes membros, oque ira mudar será os parametros, caso seja uma função
+membro não tera parametros, visto que essa função tem acesso aos atributos da propria classe,
+agora caso for uma função global, o parametro tera que ser uma referencia a um objeto da classe X
+e dessa forma, ultiliza o ponteiro this para obter os atributos.
+
+->Para sobrecarregar um operador binário, igualmente ao sobrecarregamento de um
+operador unitario, mas ele leva 2 parametros, ou seja, caso for uma função membro
+deve ser do tipo (operador ">"), bool operator>(const String &) const, e caso
+for uma função global deve ser do tipo bool operator>(const String &,const String &);
+
+->Um operador de coerção, pode ser usado para transformar um objeto de um classe
+em um objeto de outra classe, e esse operador deve ser da forma A::operator char *() const,
+essa função operadora de coerção sobrecarrgada para converter um obejto de tipo A em um
+objeto char * temporario, e ela é do tipo const, pois não modifica o objeto original
+
+->Sobrecarregando o operador ++ ou --:
+
+->Para este caso, existe-se duas opções, a primeira se trata de do pré-incremento,
+que seria caso a variavel fizesse isso ++d1, logo, caso d1 se trate de um objeto, para
+o codigo funcionar, deve-se fazer umas dessa duas opções:
+
+Função Membro:
+    Date &operator++();
+Função global friend:
+    Date &operator++(Date &)
+
+Caso fosse um pós-incremento(d1++), então teriam essas duas opções:
+
+Função Membro:
+    Date operator++(int)
+Função Global friend:
+    Date operator++(Data &, int)
+
+Em que nas funções globais, a variavel int não precisa ter nome algum, pode ser apenas
+"int".
+
+->Para um pós incremento, como se trata desse tipo de incremento, deve-se salvar
+o objeto usado em outro objeto e retorná-lo por valor, mas o objeto tera sido incrementado
+no processo
+
+->Caso o programdor queira evitar entradas de dados indevidas nos construtores,
+ele consegue evitar a conversão automatica realizada pelo C++, fazendo o uso da palavra
+chave "explicit" que faz com que o parametro do Construtor seja fielmente respeitado, ou seja
+se o parametro é um objeto da classe Data, então deve ser passado um objeto da classe Data com
+parametro

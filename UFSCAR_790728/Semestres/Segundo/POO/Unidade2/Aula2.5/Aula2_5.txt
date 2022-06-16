@@ -1,0 +1,21 @@
+Aula 2.5:
+    
+    ->Reecordando, uma linguagem orientada a objetos, encapsula os dados e funções em pacotes(classes), os detalhes de implementação ficam escondido dentro 
+    da classe.
+
+    ->As struts , são membros auto-referenciáveis, onde os membros não podem ser instancias de esturturas internas, mas podem existir ponteiros para esturturas
+    internas, usados em listas encadeadas, filas, pilhas e arvores.
+    ->Criar novos tipos de dados usados para declarar variáveis.
+    ->Ex:
+        horario x;
+        horario Array_horario[10]
+        horario *Ptr_horario
+    ->Para acessá-los, faz o uso do "Ponto" para estruturas e membros de classes, ou "seta" para estrutura e membros como ponteiros para objetos
+    ->Ex:
+        cout<<x.hora; //objeto simples
+        cout<<horarioPtr->hora; //ponteiros
+
+    ->Se a classe contém varios construtores, há uma sobrecarga de classe.
+
+    Conclusões:
+    ->Structs não empacotanm funções e variáveis em um unico envelope, não há validação de dados e não há garantia de integridade

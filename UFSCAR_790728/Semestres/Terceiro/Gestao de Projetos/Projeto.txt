@@ -1,0 +1,474 @@
+Falar introdução
+
+
+Capitulo teorico-dificil de ler, dificil de se aprofundar, pode falar um pouco sobre
+
+Metodo de pesquisa- IMportante de se aprofundar e analisar, ter ideia de como é feito uma pesquisa, passo para fazer o trabalho de cmapo, para coletar evidencias, para confirmar uma hipotese, etc...
+
+Resultado e conclusão são muito imporantes também, a teorica é muito discutida nos resultados
+
+
+SLIDES ENXUTOS
+
+15 slides -> introdução, parte teorica, metodo de pesquisa, resultado e conclusao
+
+intro 3, teorica 4, metodo de pesquisa 4,resultado 3, conclusao 3
+
+
+
+Resumo:
+
+Processo social de projeto, realizado em uma empresa postal, buscando auxiliar em novas praticas de projeto no contexto da Ergonomia.
+
+Problema:Articulação entre Ergonomia e uso em processos sociais de projeto.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Introdução:
+
+Transformação do trabalho
+A pesquisa destaca especialmente o estudo da condução de processos de projeto. Que são importantes topicos do setor, como:
+
+-Processo coletivo e de cooperação
+-Concepção e inovação
+-Interfaces de comunicação em projeto
+
+Questão levantada: Como os conflitos de valores no processo social de projeto são materializados no objeto por meio das variáveis e quais as inteções de uso?
+
+Com essa questão, o objetivo geral da pesquisa, foi explicar e demonstrar, as decisões  ocorridas na situação da pesquisa, e tipificar as situações para produzir conhecimento científico, para contribuir
+na prática de projeto em Ergonomia
+
+Além disso, visa-se identificar e sistematizar as influencias de interfaces materiais ultilizadas pelos atores durante o processo social de projeto
+
+Também, analisar como as inadequações de uso podem contribuir para o projeto de novos dispositivos tecnicos
+
+Além disso refletir sobre a contribuição da Ergonomia na aproximação entre projeto e uso
+
+Incentivadores desses objetivos foram:
+
+-Design como área do conhecimento dotada de competenciais para analise e concepção de produtos
+-Ergonomia com uma area de competencias para analise e transformação do trabalho
+-Necessidade da integração de Ergonomia e Projeto
+
+A pesuisa baseou-se no método qualitativo de pesquisa.
+
+Foi analisado todo o processo social baseado no ciclo continuo de passos:
+i)Planejamento
+ii)Coleta de dados
+iii)Analise dos dados
+iv)Implementação das soluções
+V)Avaliação dos resultados
+
+
+Os resultados tiveram uma dupla preocupação: Técnica e científica, e concordou com os autores Turrioni e Mello, que afirmam que "A pesquisa ação é uma estratégia de pesquisa na engenharia de produção
+que visa produzir conhecimento e resolver um problema prático"
+
+A pesquisa deve refletir cinetificamente os acontecimentos ocorridos, criando a produção de conhecimento e a contribuição para produção de novas práticas
+
+
+A figura 1, esquematiza a metodologia de pesquisa na qual ela é analisada no campo teorico, e focada nas disciplinas de Ergonomia e Design.
+
+
+Figura 1, demonstra o entendimento da teoria, focada nos dois tópicos principais da tese, que são Ergonomia e Desing, logo após uma pesquisa é realizada, com o planejamento de como esta pesquisa será feita, a coleta de dados, a analise dos dados coletados e a avaliação dos resultados, e finalmente é aplicado a teoria aos resultados obtidos, para gerar alguma nova prática de trabalho.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Parte Teórica:
+
+Eu devo analisar os conceitos de Desing e Ergonomia focada na tese.
+
+Ergonomia: Estudo relacionamento entre o individuo e seu trabalho, equipamento, ambiente, e particularmente a aplicação de seus conhecimentos para a solução de problemas surgidos desse relacionamento.
+História: Esse conceito foi inicialmente explorado por Henry DreyFuss, que ressltava que caso o ponto de contato entre produto e pessoa fosse um ponto de atrito, então o projetista teria falhado, caso contrário, o projetista teria sido bem sucedido
+
+Essa ideia pode ser vista atualmente, por exemplo, saquinho de katchup, pacote de bolacha
+
+Entretanto foi primeiramente aplicada por Woitej que focou esse conceito nas condições de trabalho das fabricas na Segunda Revolução Industrial.
+
+Mas é a partir da SGM que a ergonomia surge como uma disciplina estruturada, que tinha como objetivo aumentar os niveis de eficacia, conforto e segunraça dos equipamentos militares na SGM.
+
+Um exemplo disso foi um caça ingles(Procurar no capítulo 10) que por falha humana(nao estar ergonomicamente planejada) caia.(Colocar imagem)
+
+O estudo Ergonômico é mais ultilizado na indústria, entretanto nesta tese foi ultilizado para os serviços postais, que são uma industria de serviços e não de materiais
+
+A tese, foca na Ergonomia Situada, que tem como método para ação a Analise Ergonomica do trabalho(AET).
+O AET é um método  destinado a examinar a complexidade, sem colocar em prova um modelo escolhido, permitindo abordar o modo como os operadores controem os problemas antes de resolve-los
+
+Colocar a Figura 03 do TCC
+
+Design: Papanek extrai 6 dimensoes para o desenvolvimento de um novo produto, e assim, pode-se associa as ideias do COmplexo funcional, descrito por Papanek ao Design, 
+
+Figura 5 tcc colocar, papanek apresenta este diagrama, mostrando as ações e relações que compoeo oque ele chamou de Complexo Funcional
+
+Descrição das dimensões:
+
+-Método: Construção de modelos que resultem em soluções de interção criativa entre ferramentas, processos e materiais
+
+-Associação: Analogia entre sociedade e objeto, ou seja, para o autor, os valores associativos são universiais, como por exemplo, objetos marcantes nas paisagens urbanas, produzem a mesma interpreção
+por diferentes individuos, colocar uma foto que exemplifique isso
+
+-Estética: Conceitos esteticos, como ferramentas do repertorio do desginer que podem trazer algum sentimento ao usuario, como felicidade, ao ter contato com um produto
+
+-Necessidade: Busca as necessidades do usuario, com a tentativda de manipular suas vontades e desejos por meio de lançamentos, ou criação de tendencias/modas
+
+-Intenção:Essa dimensão é uma reflexão sobre a epoca e a condição que um produto foi criado, e como ele se adequa e se relaciona com a ordem socioeconomica
+
+-Uso:Funcionalidade de um objeto, um objeto deve ser simples de se ultilizar e eficiente em sua função
+
+
+Design como método: Precisa ser conduzido com uma metodologia clara, fazendo com que os atores percebam a argumentação, interpretação, invenção e análise durante a criação dos produtos.
+Design como associação: Muito forte na cultura material, e pode ser entendido com a criação da própria cultura, representado pelos objetos, dar um Exemplo de produto.
+Design como estética: Relação muito forte com a arte, criar algo belo, bonito, que chame a atenção visualmente do usuário
+Design como necessidades: O design como necessidade, visa tornar o objeto útil para o usuário, ultilizado a racionalidade do próprio usuário.
+Design como inteção: Esse tipo de design, deve se relacionar com o meio ambiente, e com o meio socioeconimico, então deve ser pensando com base nos usuários
+Design como uso:O projetista, deve tornar o objeto facil de se manipular, simples, e muito eficiente em sua função
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Método de Pesquisa:
+
+Planejamento da Pesquisa-Ação ->
+Na fase de planejamento define-se o contexto e o proposito da pesquisa, a estrutura
+conceituall filosofica, e também as tecnica de coleta de dados. Ou seja, nessa etapa de pesquisa, se planeja, como o pesquisador irá atuar e quais ações ele deverá tomar, e a visão
+ que ele deve observar os dados coletados.
+
+Estrutura social e espaços para a prática:
+
+Principais métodos:
+
+No projeto, foi ultilizado os seguintes instrumentos:
+
+Ficha de Caracterização da Tarefa: Instrumento de análise da tarefa.
+Descreve, analisa e sistematiza a execução da tarefa. Esse
+instrumento foi utilizado na etapa de Análise da Tarefa e baseado
+essencialmente em filmagens do trabalho real.
+
+ EWA (Ergonomic Workplace Analysis): Instrumento para análise de
+riscos no ambiente de trabalho. O EWA (AHONEN, LAUNIS &
+KUORINKA, 1989) foi usado para uma análise detalhada após os
+problemas terem sido superficialmente identificados. O local de
+trabalho é analisado de acordo com 14 itens escolhidos por dois
+critérios: 1o) cada item deve representar fatores nos quais a saúde, a
+segurança e a produtividade do posto de trabalho possam ser
+projetados e realizados; e 2o) os itens devem ser quantificáveis. São
+eles: Espaço de Trabalho, Atividade Física Geral, Levantamento de
+Cargas, Posturas de Trabalho e Movimentos, Riscos de Acidente,
+Conteúdo do Trabalho, Restrições no Trabalho, Comunicações entre
+Trabalhadores e Contatos Pessoais, Tomadas de Decisão,
+Repetitividade no Trabalho, Atenção, Iluminação, Ambiente Térmico
+e Ruídos. Esse instrumento foi utilizado na Análise da Tarefa
+objetivando avaliar e comparar riscos nas diferentes tipologias
+existentes para o posto de trabalho do Atendente Comercial, bem
+como na fase de Análise do Uso Pós-Implantação.
+
+ EJA (Ergo Job Analyser): Instrumento de análise desenvolvido para
+avaliar Estações de Trabalho a partir da análise de posturas
+corporais, frequência de movimentos em atividades similares ou
+distintas, carga despendida, entre outros fatores. Esse instrumento
+considera não apenas o movimento de cada articulação corporal
+durante cada atividade, mas solicita que se numerem os movimentos
+em uma espécie de contagem total por dia. Ele indica amplitudes
+diferenciadas de movimentos. O EJA apresenta uma estrutura bem
+delimitada, composta por Postos de Trabalho/Estações de Trabalho,
+Ações e Movimentos. Tal estrutura facilita a inserção dos dados
+necessários e confere maior confiabilidade aos resultados que são
+gerados. Os postos de trabalho são segmentados em uma ou mais
+estações de trabalho. Esse instrumento foi utilizado na Análise da
+Tarefa objetivando identificar as principais ações envolvidas e,
+dessas ações, os movimentos realizados.
+
+
+ Questionário de Percepção: Instrumento que visa construir a
+atividade do ponto de vista de quem a executa. Ele pode auxiliar a
+identificar questões de desconforto e outros fatores não observáveis
+da situação de trabalho. Esse instrumento foi utilizado nas etapas de
+Análise da Atividade (adaptado de SOUZA & MENEGON, 2002) e
+Validação objetivando obter as verbalizações dos trabalhadores
+sobre o seu trabalho, sua saúde e dispositivos técnicos.
+
+ Entrevistas Abertas: As entrevistas foram realizadas na etapa de
+Análise do Uso Pós-Implantação e objetivaram a partir da percepção
+dos usuários avaliar as inadequações de uso, comparando-as com o
+processo de tomadas de decisão, conflitos de valores e variáveis
+ocorrido no processo social.
+
+Após a ultilização desses téncicas a analise dos dados coletados foi feita dessa maneira:
+
+Análise do Problema e Formulação de Características Desejáveis
+para o Projeto (Análise da Demanda): Nessa fase, visou-se estruturar
+um entendimento dos aspectos da função social do objeto. Buscou-
+se aumentar o entendimento do contexto no que tange aos aspectos
+materiais e imateriais das condições de trabalho. As abordagens de
+Design foram aqui utilizadas para tornar inteligível o processo mental
+que constituiu o processo projetual (JONES, 1992).
+
+ Análise da Função Social dos Dispositivos Técnicos e Requisitos de
+Projeto (Análise da Tarefa): Nessa fase, buscou-se a análise das
+variáveis que compõem as formas e usos dos dispositivos técnicos
+existentes dentro e fora da empresa. Objetivou-se conhecer
+profundamente a estrutura física e os manuais técnicos que a
+compõem a fim de montar um repertório de formas e usos durante o
+processo de projeto. Foram utilizados: estudo morfológico,
+dimensionamentos, antropometria, registros documentais e
+fotográficos, observação do trabalho no posto, entre outros.
+
+ Análise das Variáveis e Interações de Uso; Requisitos de Projeto; e
+Conceitos Geradores (Análise da Atividade): Buscou-se detectar as
+dificuldades e facilidades durante a utilização dos componentes do
+posto. Para o estudo da usabilidade, utilizaram-se as características
+de restrições físicas, semânticas, culturais, lógicas (NORMAN, 2006).
+Quanto à legibilidade, buscou-se as imagens públicas, significativas
+para vários usuários, que satisfazem a percepção de orientação
+(LYNCH, 1997).
+
+ Requisitos de Projeto; Conceitos Geradores; Propostas; Solução
+Adotada e Respectivos Testes (Diagnóstico e Desenvolvimento de
+Soluções): Essas etapas foram utilizadas para conduzir a construção
+do objeto na passagem entre a fase de conceito para a fase de
+materialização. Os requisitos de projeto são sínteses de conceitos
+advindos das análises; os conceitos geradores são as escolhas das
+variáveis a partir dos requisitos; as propostas são discutidas a partir
+das interfaces de comunicação; e os testes em uso são feitos a partir
+da prototipagem. Os protótipos sofrem uma série de modificações, a
+fim de testar conceitos antes da sua especificação.
+
+ Especificação Final e Implantação (Implementação): A especificação
+foi constituída por desenhos e memoriais descritivos detalhando as
+soluções escolhidas. A elaboração desse detalhamento ainda flagra
+uma série de itens que devem ser ajustados, os dispositivos ganham
+espessura correta do material, determinação de características para
+os fornecedores e outros pontos que impactam diretamente na
+proposta escolhida.
+
+ Análise do Uso Pós-Implantação (Difusão): Sabe-se que essa fase,
+assim como a anterior, desenvolve ainda algumas adequações (ou
+As Built) que podem alterar os conceitos geradores (DUARTE,
+CONCEIÇÃO & LIMA, 2008) e precisam ser monitoradas pelo Grupo
+de Trabalho (o que não ocorreu no caso apresentado). 
+Na Análise do Uso Pós-Implantação, foram usados: estudo morfológico,
+dimensionamentos, registros documentais e fotográficos, observação
+do trabalho no posto, interações com usuários, entre outros.
+
+
+Ultilizar o quadro 2, importante e o quadro 3, também importante
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Resultados:
+
+A Figura 50 foi elaborada a partir dos eventos ocorridos na pesquisa-
+ação, nos quais para cada etapa da AET foram associadas atividades
+
+projetivas. A articulação aconteceu em todas as etapas da intervenção. Cada
+etapa dependia mais de uma área do conhecimento do que da outra, mas em
+todas elas essa troca de conhecimentos esteve presente. Essa articulação foi
+essencial para a dinâmica do Grupo de Trabalho, pois dessa forma o processo
+tornou-se conhecido e seguido por todos.
+Como descrito por Ergo&Ação (2003), a articulação entre as fases da
+AET e projeto divide-se em dois blocos: Análise e Síntese (ver Figura 50).
+
+Figura 50, ultilizar
+
+No caso apresentado, percebeu-se que a tarefa mais árdua para os
+pesquisadores foi manter o grupo cooperativo e ativo durante todo o processo
+social. Para Coughlan & Coghlan (2002), os pesquisadores devem fazer uso de
+três tipos de questionamentos para promover a interação do grupo. São eles:
+questionamentos puros (com perguntas como ‘o que está acontecendo?’ ou
+‘diga-me o que aconteceu’); questionamentos para o diagnóstico ou
+exploratório (com perguntas como ‘como você se sente sobre isso?’ ou ‘por
+que você acha que isso aconteceu?’); e questionamentos de confrontação ou
+apresentação de novas perspectivas (com perguntas como ‘você já pensou
+sobre isso ...?’ ou ‘você já pensou que ... pode ser a solução?’).
+
+Esses questionamentos davam a própria dinâmica do processo social,
+culminando nas diretrizes (hipóteses) que nortearam os encaminhamentos da
+fase seguinte.
+
+O conflito de valores entre os participantes provocou discussões
+calorosas no entendimento e encaminhamento das ações no Grupo de
+Trabalho. A forma de aproveitar esses conflitos e promover trocas de
+conhecimento foi legitimar o espaço público como meio democrático de
+interação dos atores e evitar envolvimentos emocionais dos participantes.
+
+O posicionamento do Grupo de Trabalho foi de que as análises eram
+importantes para avaliar as consequências desse uso e trazer conhecimento
+para novos desenhos, deliberando prototipagem dessa situação.
+
+Uma das estratégias de desenvolvimento e inovação das empresas, é ultilizar de
+discussões de funcionários/clientes, para melhorar o seu serviço, e inovar seu produto,
+nesse caso os atores discutiram sobre possíveis adaptações no balcão BP 022
+
+Essas discussões excediam a dimensão de uma avaliação e tornaram-se
+ferramentas para contestar o consenso travado na fase de elaboração das
+propostas, o que se opõe à ideia de cooperação (DEJOURS, 2008). O grau de
+cooperação, segundo o autor, define a competência de um determinado grupo
+e pode ser avaliado por meio das seguintes dimensões (descritas na primeira
+seção da revisão): Visibilidade; Confiança; Controvérsia e Deliberação;
+Arbitragem; e Aceitação e Disciplina.
+Em relação à questão de Visibilidade, pode-se dizer que o trabalho dos
+integrantes do Grupo de Trabalho foi conhecido uns pelos outros por meio de:
+criação dos subgrupos, constituídos por integrantes do grupo subdivididos por
+áreas de conhecimento e de interesse para examinar variáveis específicas da
+situação sob análise; aplicação do curso de nivelamento, objetivando unir o
+grupo nas mesmas fundamentações teóricas, ministrado pelos atores; e,
+principalmente, pela sistemática dos Seminários de Consenso, espaço público,
+
+
+onde os atores expunham seus resultados, tornando as informações inteligíveis
+a todos os participantes (se preciso por meio dos debates).
+No que se refere à questão de Confiança, pode-se dizer que foi
+formalizado, quando da instituição do Grupo de Trabalho, que este receberia a
+responsabilidade pela intervenção, não os atores individualmente, nem os
+pesquisadores, nem mesmo a empresa, mas o grupo como um todo. Portanto,
+revelar saberes seria um compromisso necessário para compor coletivamente
+a solução. Esse argumento funcionou até certo momento, enquanto não
+apareceram grandes divergências ou desafios, nesses casos os pesquisadores
+recebiam sozinhos a tarefa de produzir e sistematizar os conhecimentos. A
+relação de trabalho (cliente que precisa ser satisfeito x consultoria que tem
+atribuição de satisfazer) foi utilizada nos relatórios dos protótipos visando
+redirecionar as proposições. A relação de confiança rompeu-se e o trabalho
+coletivo perdeu-se sua mobilização. Para Dejours (2008), confiança é uma
+competência baseada muito mais na ética do que na técnica ou na psicologia.
+Em relação à questão da Controvérsia e Deliberação, pode-se dizer que
+os Seminários de Consenso eram fóruns privilegiados (espaços legitimados
+para produção de conhecimento diante da diversidade dos atores que
+constituíam o Grupo de Trabalho e para negociações entre esses atores que
+determinavam coletivamente os encaminhamentos da intervenção). No bloco
+de Análise (ver Figura 50), houve poucas controvérsias e as deliberações
+transcorreram com certa facilidade, porém no bloco de Síntese os debates
+
+aumentaram e as decisões foram sendo cada vez mais complicadas. Destaca-
+se a importância das filmagens e dos relatórios parciais como registro dos
+
+consensos e das deliberações tomadas anteriormente pelo grupo.
+No que diz respeito à questão da Arbitragem, pode-se dizer que foi
+manifestada nos documentos encaminhados pela coordenação da equipe da
+empresa e na resposta da coordenação da equipe da universidade
+(pesquisadores). Esses atores tinham pesos diferenciados dentro do Grupo de
+Trabalho e, na impossibilidade de um consenso geral, tiveram que arbitrar para
+direcionar os próximos passos da intervenção. Destaca-se que, no documento
+elaborado pela coordenação da empresa, percebe-se conivência aos relatórios
+em detrimento de imparcialidade. No documento resposta da universidade,
+percebe-se a vontade de explicar os embasamentos da solução adotada e
+
+
+
+retomar o escopo, foco e método eleitos para a intervenção. Em ambos, nota-
+se a intenção de rearticular o Grupo de Trabalho como esfera decisória.
+
+Em relação à questão da Aceitação e Disciplina, pode-se dizer que os
+documentos encaminhados após a prototipagem, nos quais foram ignorados os
+conceitos geradores das propostas advindos dos consensos do Grupo de
+Trabalho, foram um desvio importante. Outro ponto foi na especificação final
+para implantação, na qual dois parâmetros importantes (ajuste de apoio para
+os pés e acabamentos) foram deixados de lado em detrimento de viabilização
+de custos.
+Ao contrário do que se esperava, os documentos encaminhados após
+avaliação dos protótipos indicavam controvérsias e dúvidas a respeito das
+decisões anteriores. O protótipo era o resultado parcial de um processo coletivo
+de projeto. Acredita-se que essa interface funcionou como um verdadeiro vetor
+de trocas entre os atores (BÉGUIN, 2008b), talvez porque sua característica de
+articular conceitos teóricos e práticos tenha provocado compreensões mais
+complexas manifestas nos documentos descritos.
+
+Para evitar esse trabalho e o acúmulo de atividades no final da jornada,
+alguns postos de trabalho adotaram um dispositivo para guarda e separação
+dos documentos gerados. Constituía-se de uma caixa de papelão com duas
+divisórias verticais separando três espaços distintos. Essa caixa era colocada
+sob o balcão e era utilizada pelo atendente para cada movimento do banco
+postal (ver Figura 53).
+Nos debates dentro do Grupo de Trabalho, alguns membros
+consideraram esse tipo de iniciativa absurda por parte do atendente, defendiam
+os dispositivos técnicos oferecidos pela empresa e condenavam qualquer
+‘distorção’ de seus conceitos.
+Nesse momento, os pesquisadores conduziram o grupo com
+questionamentos de confrontação para que explorasse novas representações
+de trabalho e absorvesse essas adaptações como “inputs” para a modelagem
+do trabalho futuro provável:
+
+“Será que o conceito de separar documentos gerados imediatamente
+após o atendimento facilita o trabalho do atendente comercial?”.
+“Será que um dispositivo para a guarda desses canhotos deve ser
+incorporado ao posto?”.
+“Pode-se usar essa inadequação de uso como requisito de projeto para
+o desenho do novo balcão?”.
+
+Esse conceito realmente foi incorporado e prototipado no BP 02
+Modificado. Depois foi prototipado no novo balcão em um processo de projeto
+em conjunto com os usuários. O conceito foi validado e implantado no balcão
+implantado como um acessório para a guarda de documentos gerados
+localizado entre o plano do cliente e do atendente. Na avaliação dos usuários,
+a implantação desse acessório foi positiva e facilitou seu trabalho. Ver figura
+53.
+
+Figura 53, impórtante
+
+No balcão implantado, podem-se ressaltar as seguintes dificuldades
+para os trabalhadores causadas pelas inadequações de forma ou função dos
+dispositivos técnicos: falta de ajuste no tablado de apoio dos pés, baixa
+qualidade dos acabamentos, falta de manutenção das cadeiras, falta de lixeira
+e dimensão exígua dos compartimentos do módulo auxiliar.
+Figura 55
+
+O processo social que caracterizou a mudança e a produção de
+conhecimento do caso apresentado pode ser entendido como um processo de
+comunicação em que foi preciso selecionar as informações mais significativas.
+Coordenar esse processo exigiu conhecer muito bem o usuário, no caso
+pelo enfoque da Ergonomia, e colocar à disposição do grupo as ferramentas
+necessárias para sua compreensão. Mesmo com o uso da AET, que construiu
+o diagnóstico e a base teórica para explicar os determinantes da situação
+analisada, a fase de síntese da articulação AET e atividades projetivas
+(predominantemente projetual) atraiu os principais conflitos de valores do
+grupo.
+
+Página 211 e 212 e página 220
+
+--------------------------------------------------------------------------------------
+
+Conclusão:
+As conclusões da pesquisa indicam a necessidade de articulação da
+Ergonomia com uma escola projetiva durante um processo social de projeto
+para a aproximação projeto e uso.
+As atividades de projeto advindas das várias áreas consideradas
+projetivas, como arquitetura, design, engenharia, entre outras, em geral
+acabam por distanciar o ‘uso’ do ‘processo de concepção’ (Béguin, 2003;
+Duarte, 2002; Menegon, 1999; Barata, 1993). Segundo Baltazar & Kapp (2006),
+as metodologias de projeto largamente utilizadas constituem-se de etapas
+fragmentadas para a construção de soluções. Genericamente essas etapas
+podem ser descritas em: demanda, programa de necessidades, projeto e uso.
+Na lógica da Ergonomia, essa divisão não é válida, pois a elaboração de
+uma solução engloba necessariamente os meios para realizar o trabalho futuro
+provável (DANIELLOU, 2002). Essa relação é indissociável, não se pode
+pensar nos meios de trabalho à parte de sua utilização no cumprimento da
+tarefa.
+Neste trabalho os resultados dessa integração foram refletidos a partir
+das ações do sujeito na prática da sua atividade (relações de uso), na forma
+desse usuário poder agir naturalmente ou não com o auxílio do objeto
+concebido. Destacou-se que existem diversas maneiras para desenvolver
+propostas em projeto (determinação de uma escola projetiva), e que essa
+escolha também determinará as possibilidades de interações no uso.
+
+No viés da Ergonomia é enfocada a atividade dos trabalhadores e a
+compreensão da inteligência da prática e do trabalho coletivo, preocupando-se
+com a diversidade e a subjetividade com que uma pessoa constrói suas ações.
+No viés do Design (escola projetiva determinada para a análise do caso) é
+enfatizada a pluralidade da função social de um objeto, qualificando-o como um
+meio de expressão ética e estética. A partir das referências pôde-se apresentar
+as abordagens de Design e a generalização de suas práticas no contexto da
+Ergonomia.
+Concluiu-se que a negociação dos interesses e a busca de consensos
+durante o processo social serão materializados nos dispositivos técnicos. A
+qualidade do objeto dependerá do processo social engajado pelos
+participantes, e isso transcende o processo racional e instrumental. Deve haver
+negociação, trocas, invenção e elaboração do próprio ambiente dentro do qual
+os participantes trabalham.
+Para avaliar as implicações deste trabalho retoma-se o caso para
+explicitar os principais interesses manifestos dos atores, as opções projetuais
+advindas da negociação e as inadequações de uso avaliadas na análise pós
+implantação (ver Quadro 23).
+
+Quadro 23.
+
+
+
+
+
+
+
+

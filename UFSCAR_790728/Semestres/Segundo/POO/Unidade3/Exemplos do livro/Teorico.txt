@@ -1,0 +1,50 @@
+Composição e herança:
+=>As classes não precisam ser criadas do zero, elas podem incluir objetos
+de outras classes, como membros, ou podem ser derivadas de outras classes
+que fornecem atributos e comportamentes que as novas classes, podem
+ultilizar. Essa reultilização é importante por aumenta a produtividade 
+do programador, já que facilita as vezes, seu trabalho, a inclusão de
+objetos de um classe, como membros de outras classes, é chamada de 
+composição ou agregação
+
+Escopo de classes e acesso a membro de classes:
+
+=>Os membros de um classe e as funções membros fazem parte do escopo da classe
+já as função não membros fazem parte do escopo de arquivo.
+=>Dentro das funções membros da classe, é possivel o acesso dos membros
+facilmente sem nenhum auxilio, entretando fora da classe, é necessario o uso
+de handles
+=>Dentro de uma classe, os membros podem ser ocultados dentro das funções membroc
+caso, no escopo de bloco(dentro da função), haja uma declaração de variavel ou 
+uma variavel com o mesmo de nome de um membro da função, caso isso aconteça
+no escopo de bloco, essa variavel é ocultada
+
+Funções de acesso e Funções ultilitárias:
+
+=> As funções de acesso geralmente leem ou exibem dados, outra ultilização
+comum é testar a veracidae ou a falsidade, esses funções são chamadas
+de funções predicado, retornam valores True ou False(0,1)
+=>Uma função ultilitaria nao faz parte do public, e sim do private, dessa forma
+ela tera contato com o programa, mas não com o usario, ou seja de certa forma
+o projetista deseja que o usuario não tenha contato com essa função para não 
+atrapalhar no fluxo de programa, esse tipo de função pode ser usada apenas dentro
+da classse, ou por classes friends
+
+=>Um destrutor é outra parte especial da função membro, denominada pelo (~)
+seguido do nome da classe
+=>Um destrutor faz a limpeza do objeto, e deixa-o pronto para re-uso, ele pega todas
+as alterações feitas no objeto X, e reseta elas
+
+=>Os destrutores são chamados quando o uso do objeto no programa acaba, entretando 
+casos do tipo static, se mantém existentes até o final do programa, junto aos objetos
+globais, que sao delcaradas antes do main, e fora de funções;
+
+=>Atribuição padrao membro a membro de objetos:
+
+->Ao ultilizar o operador "=", cada membro do objeto à direita é passado, para
+o outro objeto e uma operação membro-a-membrmo.
+->Essa passagem acontece por valor, o compilador cria um objeto-copia, e dess forma
+atribui a cada atributo do objeto os valores do objeto-copia
+->A passagem de um objeto por valor, é melhor do ponto de vista de segurança, pois 
+como é criado um objeto copia, ele não premite funções tenham acesso direto aos atributos, diferentemente
+quando a passagem do objeto é por referencia, logo evita-se esse uso, e opta-se pela passagem por valor

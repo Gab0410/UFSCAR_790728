@@ -1,0 +1,12 @@
+Namespaces:
+
+->Como as vezes uma variavel de um escopo pode se sobrepor a uma variavel 
+de mesmo nome mas escopo diferente, criando um possivel conflito de atribuiçao,
+essa sobreposição pode ocorrer em diferentes níveis, mas costuma ocorrer em 
+bibliotecas independentes que ultilizam variaveis globais com o mesmo nome.
+
+->Para efetivar um namespace deve se fazer desse modo:
+
+MeuNameSpace::membro
+
+using namespace MeuNameSpace;

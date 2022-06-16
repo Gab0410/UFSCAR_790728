@@ -1,0 +1,66 @@
+Componentes fortemente conexos- Algoritmo de Kosaraju
+
+Em um grafo não orientado, um componente conexo é um conjunto de vértices maximal em que entre qualquer par de vértices, existe um caminho.
+
+Numa intuição fisica se imaginarmos o grafo construido com linhas, um componente conexo é um objeto que não pode ser separado, sem romper as "linhas" que unem
+os vértices.
+
+Maximal:Maior conjunto de vértices que contem no Grafo
+
+Já num grafo orientado, por conta da orientação dos arcos, ao considerarmos um part de vértices qualuqer, é possível que haja caminho de v para u, mas não
+de u para v, por isso o conceito de componente conexo ganha uma certa nuance.
+
+Logo podemos falar em componentes fracamente conexos que correspondem aos componentes conexos que encontramos se desconsideramos a orientação dos arcos, e 
+tratarmos arcos como arestas, ignorando momentaneamente as direções
+
+Mas também podemos falar de componentes fortemente conexo, um subconjunto s, maximal, de vértices, tal que para qualquer dois vertices a e b em S, existe
+caminho de a para b e também de b para a
+
+
+Para desenvolver a intuoção sobre o problema e sobre como resolve-lo podemos realizar buscas no grafo interiro, entretanto, caso a busca começa a partir de uma
+componente sorvedouro, encontramos um componente fortemente conexo corretamente, e um component é sorvedouro, se não tem arcos indo dele para outros componentes
+tal componente corresponde a um vértice sorvedouro no gráfico contraido.
+
+
+Como saber de quais vértices começar a busca? ou seja, como localizar um componente sorvedouro?
+
+-Componente fonte: Um componente fortemente conexo é fonte se não tem arcos vindo de outro componenentes para ele
+-Tempo de término de um vértice: Corresponde ao momento em que a bsuca termina de passar por esse vértice, após explorar todos os vértices alcançaveis a partir
+dele
+
+
+LoopBuscaProfTempoTerm(Grafo G){
+
+    marque todos os vertcies e v como não visitados
+    t = 0 //tempo de termino inicial
+
+    para cada v E V 
+        se v nao foi visitados
+            buscaProfRecTT(G,v)  
+}
+
+buscaProfRecTT(Grafo G,vertice v){
+    maruq v como visitado
+    para cada arco (v,w)
+        se w nao foi visitado
+            buscaProfRecTT(G,w)
+
+    t [v] = t
+    t++
+}
+
+Podemos inferir que o vertcie v com maior tempo de término é um compnente "fonte"
+
+
+Após implementar ao código, o interesse era encontrar vértices que estão em componentes sorvedouros, isso porque fazer uma busca a partir de um vértice
+sorvedouro encontra todos os vértices de uma componente fortemente conexam e nenhum a mais, entretanto, o algoritmo é para encontrar vértices fontes, entretanto,
+podemos inverter a orientação dos arcos, e então realizamos uma busca em profundidade para registrar os tempos de términos, isso por que um componente fonte no 
+grafo invertido, é um componente sorvedouro no grafo original, e ao inverter os arcos, não se altera os conjuntos de vértices que pertencem a cada componente
+fortemente conexo.
+Algoritmos de duas passadas de Kosaraju:
+
+1.Computa Grev invertendo todos os arcos de G
+2.Roda LoopBuscaProfTempoTerm(Grev) para computar os tempos de términos, que permitirão localizar vértices componentes sorvedouros
+3.Executa loopBuscaProfIdentComp(G) começando cada busca em ordem descrescente do tempo de término, e marcando os vertices como visitados em cada busca,
+com um rótulo distinto.
+

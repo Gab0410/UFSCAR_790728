@@ -1,0 +1,9 @@
+Aula 3.4:
+
+=>O ponteiro "this" e suas ultilizações.
+
+=>O ponteiro this, permite acessar o proprio endereço, ele não faz parte do objeto, o tipo do ponteiro
+this depende do tipo do objeto e se a função membro é ou não do tipo const.
+
+=>Em varias situações o ponteiro this é muito util, pois em varias situações pode ser desejador retornar
+uma copia do objeto(uma referencia dele), e o ponteiro this será de suma importância.

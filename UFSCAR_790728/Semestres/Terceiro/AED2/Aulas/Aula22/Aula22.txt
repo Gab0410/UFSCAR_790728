@@ -1,0 +1,82 @@
+Busca em grafos:
+
+Busca em grafos é a operação mais básica, importante e genérica para se fazer em um grafo.
+
+Isso por que ela é fundamental para obter informações sobre conectividade, isto é determinar como e com quem se conecta cada vértice, além disso, ela pode
+ser especializada em vários tipos de busca.
+
+A busca em grafos genérica encontra todos os vértices, que podem ser alcançados a partir de um vértice inicial, a ordem em que se visita os vértices é arbitrária,
+e a única restrição é ir sempre de um vértice encontrado para um não encontrado.
+
+A busca em grafos genérica encontra todos os vértices, que podem ser alcançados a partir de um vértice inicila, a ordem que se visita os vértices, é arbitrária,
+e a única restrição é ir sempre de um vértice encontrado, para um não encontrado.
+
+Em grafos orientados, a busca respeita a orientação dos arcos.
+
+Algoritmo(PseudoCódigo):
+
+busca_genérica(G=(V,E),s){
+
+    marcar todo v pertencente V como não encontrado
+
+    marca S como encontrado
+
+    //Laço principal
+
+    Enquanto exisitir uma aresta/arco (u,v), com u encontrado e nao encontrado  
+        marque v como encontrado
+
+}
+
+Corretude:
+
+Ao fim do alogritmo, um vértice v foi encontrado, se e somente se, existe um caminho em G de s até v
+
+
+Busca em profundidade:
+
+Esta busca explora um caminho do grafo, até que não haja mais para onde estendê-lo, então volta pelo caminho percorrido, procurando outras rotas que ainda
+não foram visitadas, essa busca também é conhecida como DFS(Depth-First Search)
+
+O comportamento da DFS está intimamente relacionado com a estrutura de dados pilha(stack), e também pode ser implementada ultilizando recursão
+
+Ex de busca em profundidade:
+
+Usamos o termo tempo de inicio de um vértice, como sinonimo de ordem de chegada, e o tempo de término de um vértice como sinonimo de ordem de saída.
+
+Para a busca em profundidade funcionar corretamente, o algoritmo deve confirmar que todas as possiveis arestas sejam visitadas , ou seja, se um vértice de inicio
+contém 3 arestas que nao se ligam, as 3 arestas devem ser percorridas.
+
+
+Os tempos de inicio e termino dos vértices nos contam quais vértices foram alcançados a partir de um determinado vértice, mais especificamente, se um vértice
+u tem tempo de inicio i e de termino t, todo vertice com tempo de inicio maior que i e menor que t, foi alcançado a partir de u.
+
+
+PseudoCódigo da busca em profundida recursiva:
+
+buscaProfR(G=(V,e),v)
+    marque v como vistado
+    para cada aresta(v,w)
+        se w nao foi vistado
+            buscaProfR(G,w)
+
+Corretude:
+
+Encontra todos os vértices alcançaveis, ou seja, para os quais existe caminho a partir de v, segue a corretudo da busca genérica
+
+Eficiencia:
+
+Leva tempo O(n_v+m_v), onde n_v e m_v são respectivamente o numero de vertices e arestas da componente do vértice v da primeira chamada da recursão.
+
+Esse resultado ocorre, pois cada vértice da componenete será visitado uma vez,antes de ser marcado como visitado, e cada aresta será considerada no máximo:
+duas vezes, caso for um grafo orientado, e uma vez caso não for orientado, já que uma aresta só é considerada quando seu vértice está sendo visitado.
+
+Identificando componentes conexos:
+
+Um componenete conexo de um grafo não orientado é um conjunto de vértices tal que existe um caminho entre qualquer partes de vértices do conjunto, para encontrar
+os componentes conexos de um grafo não orientado, usamos uma busca em grafos como a DFS, que é invocada a partir de cada vértice do grafo, cada invocação está
+associada com um rótulo/valo distinto, que será atribuido a todos os vértices encontrados naquela busca.
+
+Para encontrar os componentes conexos de um grafo não orientado, usamos uma busca em grafos como a DFS, que é invocada a partir de cada vértice do grafo, e 
+cada invocação está associada com um rótulo/valor distinto, que será atribuido a todos os vértices encontrados naquelas busca, no final temos uma partição
+do vértices do grafo.

@@ -1,0 +1,8 @@
+Aula 4.4:
+
+    -> A sobrecarga de metodos ocorre quando criamos um novo metodo com o nome igual à de um ja existente, mas com assinatura diferentes, essa assinatura é o 
+    tipo de retorno, o tipo do parametro, o numero de parametros, ou seja int retorna(int x) tem assinatura diferente de int retorna(double y)
+
+    ->Um exemplo muito usado é a sobrecarga de construtores, que podem ter ou nao parametros, ou tipos de parametros diferentes, um exemplo disso, é a classe
+    horario, que caso nao receba parametros inicia em 0, e caso receba inicia no valor indicado, logo esses construtores tem assinaturas diferentes, pois
+    mesmo ambos nao tendo tipo de retorno tem numero de parametros diferentes. Para chamalos basta Horario horario() ou Horario horario(int, int,int)

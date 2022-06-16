@@ -1,0 +1,24 @@
+Aula 2.3:
+
+->Nessa aula será abordado o conceito de encapsulamento do código, que funciona semelhantemente a ideia de um remedio, onde a capsula é feita para proteger
+o remedio do contato com o meio ambiente, no dicionario encapsular significa "proteger em uma capsula", logo em programação isso significa que voce quer
+proteger do programador entrar em contato com determinado elemento da sua classe;
+->Por exemplo, um televisor, o controle tem certos botoes que acionaram os metodos, e esses metodos entraram em contato com os atributos, logo o programador
+ou o usuario não entrará em contato com os atributos do equipamento
+->Outro exemplo, um relógio, estipula-se os limites dele, não podendo ser alterado, ninguem poderá criar uma hora com o valor de 45, pois ele é oferecido
+com valor de limite até 23, o que será oferecido é a chance de usar um metodo que alterará corretamente os valores de hora, minuto e segundo
+
+->Logo com o encapsulamento, é possiível gerar uma abstração, uma maior segurança e maior confiabilidade do equipamento, pois o usuairo não poderá livremente
+alterar qualquer dado por livre e espontanea vontade, essa alteração deverá ser consistente com o equipamento e com seus limites.
+
+->Nesse pensamento, faz mais sentido ter um metodo privado do que um atributo de livre acesso, pois tendo um atributo com essa caracteristica, o projetista
+permite que esse atributo possa ser alterado de qualquer forma, oque pode gerar erros no programa, erros no equipamento, e de alguma forma possa gerar algum
+tipo de insegurança;
+
+->As informações(atributos) protegidas não poderão ser acessadas de qualquer lugar, deverão ser acesadas apenas pelos metódos, de livre acesso, da mesma classe
+podendo-as modificar, e metódos de outras classes poderão acessar as informações de acesso restrito da classe X, somente se forem "amigas";
+
+->O acesso de dados ocorre pelo operador ".", ou se for um ponteiro ocorre pelo operado "->";
+
+->Caso queira modificar um atributo protegido e tentar usar "X.cor = "vermelho";", isso resultará em um erro, quando um atributo é proegido o unico modo 
+de modificá-lo é por meio de metódos de mesma classe;

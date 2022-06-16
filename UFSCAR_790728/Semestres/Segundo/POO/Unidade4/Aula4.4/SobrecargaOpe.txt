@@ -1,0 +1,45 @@
+Aula 4.4 parte 2:
+
+->Sobrecarga de operadores ocorre quando desejamos ultilizar operadores ja
+conhecidos em novas classes
+
+->Isso facilita criar uma classe e relacionar elas com outra, por exemplo
+uma classe matriz, onde pode-se adicionar matrizes mais facilmente, ou 
+uma fração.
+
+->Não é possivel criar novos operadores
+->Regras:
+
+Criar um metodo para uma funçao, nomeie ela com o nome operator seguida
+pelo símbolo: logo ficaria dessa forma Soma(int int) Operator+.
+
+->Isso significa que antes quando faziamos a chamada do metodo passavamos 
+o outro elemento a ser adicionado para o metodo soma, com a Sobrecarga
+
+resultado.atribui(x.soma(y))
+resultado = x+y
+
+Isso com a sobrecarga poderia ser
+resultado.operator = (x.operator+(y))
+
+Restrições:
+
+->Deve-se respeitar os tipos de dados e a operação indicada
+->Precedencia de operadores, esquerda para a direita, mas pode se usar
+parenteses para alterar Isso
+->Respeitar o numero de operandos que a operação tem
+
+
+->O objeto que chama o operator plus não esta sendo modificado
+
+Funções operadores:
+
+-Use o this para obter os operandos implicitamente
+-Obtem operando a esquerda para operador binario
+-Objeto mais a esquerda deve ser da mesma classe que o operador
+
+Funções não membro:
+
+-Necessitam parametros para ambos os operandos
+-Podem ter objeto de classe diferente da do operador
+-Deve ser friend para acessar dados private ou protected

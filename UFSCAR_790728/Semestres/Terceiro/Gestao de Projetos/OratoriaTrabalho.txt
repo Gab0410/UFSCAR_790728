@@ -1,0 +1,251 @@
+-----------------------------------------------------------------------------------------------------------------------------------
+Slide 1
+Olá boa noite eu sou o Gabriel e vou discutir sobre o TCC da aluna Andréa Regina
+-----------------------------------------------------------------------------------------------------------------------------------
+Slide 2
+O tema do trabalho foi a análise da ergonomia e do design dos balcões de atendimento de uma empresa de serviços postais, e teve como
+propósito analisar e propor uma solução de um balcão melhor para a empresa
+
+------------------------------------------------------------------------------------------------------------------------------------
+Slide 3
+A pesquisa destaca especialmente o estudo da condução de processos de projeto. Que são importantes em topicos do setor produtivo, como:
+
+-Processo coletivo e de cooperação
+-Concepção e inovação
+-Interfaces de comunicação em projeto
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Slide 4
+
+O autor levanta essa questão na tela, e  Com essa questão, o objetivo geral da pesquisa, foi explicar e demonstrar, as decisões  ocorridas
+na situação da pesquisa, e tipificar as situações para produzir conhecimento científico, para contribuir na prática de projeto em Ergonomia
+
+
+Além desse objetivo, visa-se identificar e sistematizar as influencias de interfaces materiais ultilizadas pelos atores durante o 
+processo social de projeto
+
+também, analisou-se como as inadequações de uso podem contribuir para o projeto de novos dispositivos tecnicos
+
+E finalmente foi relfetido sobre a contribuição da Ergonomia na aproximação entre projeto e uso
+--------------------------------------------------------------------------------------------------------------------------------------
+Slide 5
+A pesquisa teve 3 incentivadores, 
+o primeiro foi que o desing foi visto como uma area do conhecimento que é provida de funções e conceitos 
+para a analíse e desenvolvimento de produtos
+
+O segundo foi que a ergonomia é uma area muito útil para a analise e para a transformação do trabalho
+
+E por ultimo, havia uma necessidade de integrar Ergonomia e Projeto
+--------------------------------------------------------------------------------------------------------------------------------------
+Slide 6
+
+Os resultados tiveram uma dupla preocupação: Técnica e científica.
+E concordou com os autores Turrioni e Mello, que afirmam que "A pesquisa
+ ação é uma estratégia de pesquisa na engenharia de produção que visa produzir conhecimento e resolver um problema prático"
+
+A pesquisa deve refletir cientificamente os acontecimentos ocorridos, criando a produção de conhecimento e a contribuição para produção de 
+novas práticas
+
+E essa pesquisa foi baseada nesse ciclo contńiuo de passos.
+
+Primeiro houve o planejamento da pesquisa, seguido da correta coleta de dados por meio de uma metodologia predefinida na fase de planejamento, após esse passo,
+foi realizada a analise de dados, com enfoque no tema principal da pesquisa, seguida da implementação de soluções com embasamento teórico e finalmente houve a 
+avaliação dos resultados
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Slide 7
+A pesquisa teve o enfoque principal na questão da ergonomia e do desgin, e com isso
+
+A figura 1, esquematiza a metodologia de pesquisa.
+
+Na qual ela é analisada no campo teorico, e focada nessas disciplinas,
+Em seguida, é realizado os passo citados no slide anterior
+E no final, após a avaliação dos resultados, são feitas contribuições finais à pesquisa, com embasamento científico.
+
+ 
+Assim,o entendimento da Teoria é feito, seguido da realização da pesquisa, e uma discussão ao redor dessa pesquisa, e finalmente a implementação de novas práticas
+é feita.
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Slide 8
+
+Agora, eu vou falar sobre a parte teŕocia e apresentar alguns conceitos teóricos importantes para o entendimento da pesquisa
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Slide 9
+
+Como a tese tem o enfoque na ergonomia e no design, é importante definir esses conceitos, ambas as definições foram retiradas do livro Projeto
+do Produto, que foi o livro visto em aula
+
+A ERGONOMIA é um estudo da relação que o individuo tem com o seu trabalho, e com o ambiente profissional que este está inserido, junto a aplicação
+de seu conhecimento para solucionar problemas advindos dessa relação
+
+Já o Design, é um desdobramento da ergonomia, mais com o enfoque no desenvolvimento de produtos, com a ideia de que todos os produtos sejam 
+pensados, em atender as necessidades dos usuários, e facilitar a sua usabilidade
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Slide 10
+
+O conceito de Ergonomia foi inicialmente explorado por Henry DreyFuss, que ressltava que caso o ponto de contato entre produto e pessoa 
+fosse um ponto de atrito, então o projetista teria falhado, caso contrário, o projetista teria sido bem sucedido
+
+Na figura 2, pode-se ver um exemplo de sucesso do projetista
+Que é o suporte para notebook, que possibilita que o usuário matenha sua postura correta, ao manipular um notebook, e assim evita prejudicar
+suas postura.
+
+Já
+Na figura 3, pode-se ver um exemplo de falha do projetista
+Que foi o caça ingles spit fire, muito ultilizado na segunda guerra mundial e que era ergonomicamente mal projetado, e fazia com que os pilotos
+cometessem várias falhas, pois os botoões de ejeção do piloto, e de abertura dos "flys" eram muito próximos, e devido ao cansaço de percorrer longas
+distãncias, se confundiam e acabavam sendo ejetados.
+
+Com esses exemplos, pode-se analisar que a ergonomia é importante, e deve ser lembrada na projeção de novos produtos
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+Slide 11
+
+O escritor Papenek, no seu livro "O complexo funcional" extrai essas 6 dimensões do desenvolvimento de um novo produto e as associa ao design, relacionando
+que cada produto deve ter uma função para com a sociedade.
+
+
+-----------------------------------------------------------------------------------------------
+Slide 12
+
+As associações feitas por Papenek, podem ser visualizadas
+
+O design como método, explica que o processo deve ser objetivo, e fácil de ser compreendido
+
+O design como associação, é quando se cria uma cultura em relação a algum produto, e que faça com que o usuário associe rapidamente a ideia ao produto
+
+O design como estética é o enfoque em criar algo que se destaque por suas características físicas, que seja um produto belo
+
+O design como necessidade , é o enfoque em buscas as necessidades dos usuários para poder supri-las
+
+O design como intenção é projetar algo, com o entendimento do ambiente do produto, ou seja, visualizar o ambiente inserido, e produzir algo que seja importante para aquele ambiente
+
+E finalmente, o design como uso é projetar um produto, que seja simples de se manipular e eficiente em sua função.
+-------------------------------------------------------------------------------------------
+Slide 13
+
+Nessa fase define-se o contexto e o propósito da pesquisa. A estrutura conceitual filosófica, e também as técnicas de coleta de dados da pesquisa.
+ 
+Ou seja, nessa etapa de pesquisa, se planeja, como o pesquisador irá atuar e quais ações ele deverá tomar.
+E também a visão que ele deve observar os dados que serão coletados.
+--------------------------------------------------------------------------------------
+Slide 14
+
+No quadro 1, podemos observar os métodos ultilizados na pesquisa.
+
+Na implantação dessa pesquisa, foram realizadas filmagens dos balcões, junto a documentos e relatórios que descrevem a funcionalidade, e itens 
+que estão presentes nesses balcões
+
+TUdo isso para ter uma referencia do ponto de partida, ou seja, ter ideia sobre oque é a pesquisa.
+
+Na pós implantação, foram realizadas entrevistas com os usuários para verificar a satisfação e a aprovação desses usuários em relação ao produto implantado
+e como foi a adaptação com o novo produto, além disso são feitas filmagens e também são concebidos novos documentos, para na próxima etapa, fazer uma avaliação desses
+resultados.
+
+------------------------------------------------------------------------------
+Slide 15
+
+Um ponto importante da pesquisa, foi a relação que a AET teve com os procedimentos de investigação.
+
+Bom,
+A AET, é a análise Ergonomica do trabaho e é uma metodologia da Ergonomia que revela os diferentes determinantes que existem no ambiente de trabalho, e articula
+a base conceitual e a situação real.
+
+Assim, no quadro 3, pode-se observar as etapes da AET, junto aos procedimentos de investiação, e perceber que cada etapa está relacionada à um ou mais procedimentos
+de investigação.
+
+Por exemplo, umas das etapas da AET é a implantação de um grupo de trabalho, que na investigação pode ser visto na criação de um espaço para a negociação entre os pesquisador
+e os usuários, ou também pode ser visto na etapa de Demanda, em que é realizada a apresentação dos métodos de condução do projeto
+
+Uma parte importante, na construção de um espaço para a negociação é que 
+-A PESQUISA FOI REALIZADA POR DIVERSOS PESQUISADORES, E FOI ANALISADO COM UMA VISÃO SEMELEHANTE, E APÓS A REALIZAÇÃO Dessa PESQUISA CADA PESQUISADOR EXPRESSOU SUAS 
+IDEIAS E PENSAMENTOS, E COM ISSO CHEGOU-SE A um consenso entre os pesquisadores, após muitas negociações e discussões.Pois mesmo analisando com visões semelhantes, as ideias
+extraídas podem ter sido diferentes.
+
+
+----------------------------------------------------------------------------------------
+Slide 16
+
+Essa parte do desenvolvimento, tem como objetivo analisar os dados coletados, para possibilitar conclusões na última parte do projeto
+------------------------------------------------------------------------------------------
+Slide 17
+
+A figura foi elaborada a partir dos eventos ocorridos na pesquisa-
+ação.
+
+Nos quais para cada etapa da AET foram associadas atividades projetivas.
+
+A articulação aconteceu em todas as etapas da pesquisa. Cada
+etapa dependia mais de uma área do conhecimento do que da outra, mas em
+todas elas houve uma troca de conhecimentos. 
+
+Essa articulação foi essencial para a dinâmica do Grupo de Trabalho, pois dessa forma o processo
+tornou-se conhecido e seguido por todos, e isso é muito importante para a corretude da pesquisa.
+
+Como descrito no livro Ergo&Ação (2003), a articulação entre as fases da
+AET e projeto divide-se em dois blocos: Análise e Síntese 
+
+Oque pode ser visualizado na Figura 5, na parte superior está a análise e na infeiror a sintese.
+
+Na análise, são realizadas as análises da demanda, da tarefa e da atividade
+
+Já na sintese a difusão e a implementação de melhorias são feita, e no final, o desenvolvimento de soluções, com base na teoria, são realizadas
+-----------------------------------------------------------------------------------------------.
+Slide 18
+
+Na figura 6, à esquerda podemos verificar o organizador de documentos antigo e à direita o organizador de documentos novo, e com as imagens perceb-se que há uma grande diferença 
+entre o antigo organizador, que era visivelmente muito desorganizado, e possibilitava muitos erros,
+agora o novo organizaodor que foi implantado no novo balcão possibilita uma maior organização e evita possíveis falhas por parte dos usuários
+
+Na figura 7, podemos observar as representações de ambos os balcões, tanto o original quanto o protótipo implantado, e notar as diferenças, como por exemplo, no balcão antigo que
+está a esquerda nota-se que ele é mais alto, enquanto o balcão novo, que está à direita, é mais baixo.
+
+-------------------------------------------------------------------------------------------
+Slide 19
+
+No quadro 4 pode-se observar a tabela das diferenças entre os dois balcões, o original e o proposto pelos pesquisadores.
+
+Podemos perceber uma diferença nos assentos de ambos os balcões, no proposto, é pensado na imporancia de se trabalhar em um ambiente confortável, e que não prejudique a saúde do trabalhador, isso é feito com a ultilização de apoio para os braços, e com a diminuição do tamanho da cadeira
+
+Além disso, também pode-se analisar a movimentação do balcão,o já existente, só poderia ser ultilizado em uma única posição, oque o fazia menos portátil, já o novo balcão proposto pode ser inserido em várias posições, oque o faz muito mais portátil que o antigo.
+
+Entretanto além dos benéficios do novo balcão, ao serem colocados em prática, houveram alguns funcionários que fizeram reclamações, como a ausência de um cesto de lixo, que no antigo balcão exisitia.
+----------------------------------------------------------------------------------------------
+Slide 20
+A parte final do trabalho, é a conclusão sobre a pesquisa realizada, e a interação entre teoria e prática
+----------------------------------------------------------------------------------------------
+Slide 21
+
+O auto dissertou sobre os objetivos gerais da pesquisa e realizou, 
+
+Que é necessário uma articulação da
+Ergonomia com alguma escola projetiva, durante o desenvolvimento do projeto, para que haja uma aproximação entre uso e projeto
+
+
+E  que tanto a Ergonomia como o  Desgin foram importantes, para assimilar a teoria na prática, e entender, as situações e problemas resultantes.
+
+----------------------------------------------------------------------------------------------
+Slide 22
+
+A negociação dos interesses e a busca de consenso durante o processo social, foi algo observado pelos pesquisadores, que concluiram que deve haver 
+negociações  entre os projetistas e os usuários do objeto, o qual foi implantado, e para isso, foi realizada essa comparação, que pode ser observada
+no quadro 5, que exprime essa ideia de uma troca.
+
+Podemos analisar a categoria do "lixo", que eu ja citei na parte de resultados, que foi uma insatisfação dos usuários, 
+e que não foi aceito pela equipe de projeto, ceder essa ideia.
+
+E então os usuários fizeram suas próprias adequações, colocando caixas ou cestos sobre o balcão, e foram julgadas pelos pesquisadores como inadequações.
+------------------------------------------------------------------------------------------
+Slide 23
+
+Dessa forma, os resultados da pesquisa realizada pode auxiliar ergonomistas a refletir e agir na interface com projeto.
+E para produzir o conhecimento, elaborou-se a tese para refletir sobre a pesuqisa, e sua avaliação de resultados, e tudo isso com enfoque na Ergonomia e no Design.
+---------------------------------------------------------------------------------------------
+
+

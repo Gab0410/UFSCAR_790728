@@ -1,0 +1,85 @@
+Counting Sort:Ordenação por contagem
+
+Esse método é especializado na ordenação de vetores de inteiros pequenos, e não é baseado na comparação entre elementos do vetor, por isso vence o limitante inferior
+O(nlg(n)) para a ordenação.
+
+Supoe-se que no vetor v de tamanho n, so existem inteiros entre 0 e R-1
+
+-Para simplificar supomos que nao existem elementos repetidos, neste caso, podemos alocar um vetor auxiliar presente e inicializar presente com 0, e percorrer v com
+um indice i, marcando presente[v[i]] = 1, e assim percorrer o vetor presente, da esquerda para a direita com um indice valor, colocando valor, na proxima posição livre
+de v, mas caso haja alguma repetição esse algoritmo irá resultar em um erro, visto que apenas um valor será aramazenado, para isso:
+
+-Ultiliza-se  o numero de ocorrencias de um elemento, e nesta abordagem, aloca-se um vetor auxiliar ocorrecias, inicializando ocorrencias com 0, e percorrer v com um 
+indice i, fazendo ocorrencia[v[i]] += 1
+
+Assim para cada valor em [0,R) ao final do laço, ocorrencias[valor], possuirá o número de ocorrencias de valor, e então percorre-se ocorrencias da esquerda 
+para a direita  com um indice valor, colocando ocorrencias[valor], copias de valor, nas proximas posições livres de v.
+
+void coutingSort(int v[],int n,int R){
+
+    int *ocorrencias,valor,i,repet;
+
+    ocorrecias = malloc(R*sizeof(int));
+
+    for(valor=0;valor<R;valor++){
+        ocorrecias[valor] = 0;
+    }
+
+    for(i=0;i<n;i++){
+        ocorrecias[v[i]] += 1;
+    }
+    i=0;
+    for(valor=0;valor<R;valor++)
+        for(repet=0;repet<ocorrencias[valor];repet)
+            v[i++] = valor;
+
+    free(ocorrencias);
+}
+
+->Esse algoritmo está errado, pois ele copia ao inves de rearranjar os valores.
+
+-Para solucionar esses elementos irá ser ultilizado o vetor ocorrencias
+
+void coutingSort(int v[],int n,int R){
+    int val,i;
+    int *ocorrencias,*ocorr_pred,*aux;
+
+    ocorrencias = malloc(R*sizeof(int));
+    ocorr_pred = malloc(R*sizeof(int));
+    aux = malloc(n*sizeof(int));
+
+    for(val=0;val<R;val++) ocorrencias[val] = 0;
+    for(i=0;i<n;i++) ocorrencias[v[i]] += 1;
+
+    ocorr_pred[0] = 0;
+
+    for(val=1;val<R;val++)
+        ocorr_pred[val] = ocorr_pred[val-1] + ocorrencias[val-1];
+
+    for(i=0;i<n;i++){
+        val = v[i];
+        aux[ocorr_pred[val]] = v[i];
+        ocorr_pred[val]++;
+    }
+
+    for(i=0;i<n;i++) v[i] = aux[i];
+
+    free(ocorrencias);
+    free(ocorr_pred);
+    free(aux);
+}
+
+Esta versão está correta, mas ela desperdiça memmoria, por alocar espaço para ocorrencias e para ocorr_pred, pois ocorrencias é ultilizado apenas para calcular
+ocorr_pred, dessa forma, talvez,pode-se se usar um único vetor, usa-lo inicialmente para armazenar o numero de ocorrencias das chaves, e pode reaproveita-los
+para armazenar o numero de ocrrencias dos predecessores, isto é possível, mas exige mudanças sutis.
+
+Para isso, irá se armazenar o numero de ocorrencias da chave val em ocorr_pred[val+1], com isso, a principio a posição ocorr_pred[val] terá o número de ocorrencias
+de val-1
+
+Lembrando que, para val>0, ocorr_pred[val] = ocorr_pred[val-1]+ocorrencia[val-1];
+
+Assim para que ocorr_pred[val] passe a armazenar o numero de ocorrencias dos predecessores basta somar a ele ocorr_pred[val-1]
+
+Caso o valor de R, seja menor que o valor de n, então esse algoritmo é mais eficiente, em termos de tempo, do que algoritmos como quick sort, ou merge sort, 
+mas o problema é que R deve ser menor, logo esse algoritmo é estritamente melhor, para implementar em vetor com inteiros pequenos, pequenos nesse caso, se refere 
+a um tamanho menor que n.

@@ -1,0 +1,81 @@
+Aula 2.4:
+
+->Semelhantemente a um carro, em que o usuario não precisa conhecer como funciona um carro, precisa apenas acelerar,frear e trocar de marcha, logo ele não 
+precisa entender todo o mecanismo do carro, para dirigí-lo, igualmente à um objeto em C++, onde não é necessário conhecer os atributos do objeto para usá-lo,
+pois além de tudo eles estão protegidos. O ato de pisar no acelerador, envia uma mensagem ao carro, exigindo mais velocidade, e de modo semelhante ao enviar 
+mensagens à um objeto solicitando qualquer modificação você está fazendo uma "Chamada de função membro", e diz para uma função-membro do objeto realizar sua 
+tarefa, isso se chama "solicitação de um serviço de um objeto", ademais, cada objeto entende a si proprio, ou seja cada objeto pode ter um valor de atributo 
+só seu, podendo difereir de outro, mesmo tendo a mesma classe.
+
+->Exemplos:
+
+    Métodos e diagrama UML:
+
+    ->O primeiro exemplo faz parte de um livro de notas dos alunos, e esse primeiro exemplo faz a abertura do livro, dando boas vindas ao usuário, oque pode
+    ser visto no arquivo "exemplo1.cpp";
+    ->Antes de  de criar um objeto , precisamos definir a classe, que é quando o projetista informa os membros de dados/funções membros
+    ->A grafia camelo(usada nos codigos), é quando ao definir um objeto forme-se do seguinte modo "primeiraSegundaTerceira", sendo a primeira palavra sempre
+    em caixa baixa e as seguintes se iniciando em caixa alta;
+    ->O especificador de acesso molda o nível de acesso do elemento da classe, no "exemplo1.cpp" ele é do tipo publico, tendo acesso livre;
+    ->Ao declarar um método, voce deve especificar o tipo dele, sendo char,bool,int,float,etc...
+    ->Diagrama de classes UML, para a classe "GradeBook": O compartimento superior contém o nome da clase em negrito e centralizado, o compartimento central
+    possui os atributos da classe, e o inferior possuir os métodos/funções-membros da classe, no caso do diagrama representado na "Imagem1.png" o "+" ao lado
+    do método "displayMessage()" demonstra que essa é de acesso publico.
+   
+    Parametros:
+
+    ->Um método pode ter parâmetros para conseguir ser acionado, e nesse caso do "exemplo2.cpp" é mostrado uma mensagem de boas vindas personalizada com o 
+    nome do curso do usuairo, o nome do parametro no escopo local, pode ser diferente do parametro no escopo local;
+    ->A "Imagem2.png", reprsenta o diagrama de classes UML, apos as modificações no código;
+    
+    Métodos GET,SET:
+
+    ->No "exemplo3.cpp" temos a representação dos métodos get e set, que funcionam, respectivamente, para pegar o valor, e para setar um valor, tudo isso em
+    relação a um atributo, gerlamente privado, ou seja esses dois métodos servem para acessar o elemento privado da classe, ademais, caso existam dois objetos
+    eles podem ter valores em seus elementos diferentes, ou seja, caso sejam criados dois objetos, o "o1" e o "o2", no "exemplo3.cpp", ele podem ter diferentes
+    valores para o elemento "courseName", pois cada objeto tem uma cópia dos elemtos, ou seja, cada objeto tem seus elementos únicos.
+    ->Na maioria dos casos, métodos serão public e atributos serão private, exceto em casos onde certos métodos não devem ser acionados pelo usuario e sim por 
+    condições do sistema.
+    ->Não existe a necessidade do método se iniciar com "set" ou "get" entretando é uma boa pratica, para facilitar o entendimento do código, os métodos do 
+    tipo set, são chamada de modificadoras e do tipo get, chamadas de funções de acesso.
+    ->O diagrama de classes UML do "exemplo3.cpp" está representado na "Imagem3.png", em que, como o método set, tem parametro do tipo string deve ser indicado
+    da forma set(name::String), já o método get, que é do tipo string, deve ser representado da forma get():String, e o display que é do tipo void, não precisa
+    ter nenhuma formatação diferente e pode ser apenas display();
+
+    Construtores:
+
+    ->Um construtor pode ser ultilizado para inicalizar o objeto para não deixa-lo vazio, funcionando como um valor default, ou comum do objeto, caso ele não  
+    seja modificado, esse método, deve ser definido com o mesmo nome da classe, de modo que o compilador possa o diferencias de outros métodos da classe, uma 
+    diferença entre eles e a o resto dos métodos, é que os Construtores não podem retornar valores alguns(nao podem ser do tipo void também).
+    ->Com o uso de construtores, é possível inicializar um objeto com valores default, e com isso ter um valor inicial, que pode ser alterado pelos métodos GET
+    e pelos métodos SET.
+    ->É possível criar um construtor que não tenha parametros, e dessa forma, ele tera um valor padrão para a variavel em questão, logo caso haja 5 objetos, e
+    os 5, ao delcarados, não tiverem parametros, terão esse valor padrão para a variavel em questão.
+    ->A "Imagem4.png" representa o diagrama UML da classe, com o construtor.
+
+    Reusabilidade do código:
+
+    ->As classes em C++, devem ser reusáveis e compartilhaveis, ou seja, caso uma pessoa do Japão queira usar uma classe feita por um brasileiro, ela deve 
+    ser capaz de usar, para isso a funcao "main" não deve ser introduzida no codigo, visto que ao unir dois mains, resultará em um erro de compilação, e o
+    código não será reultilizável. Logo para isso deve-se apenas introduzir a classe, e as definições dos métodos.
+    ->Para isso, deve se criar um código dentro de um arquivo do tipo "nome.h", sem a função "main", e logo em seguida criar um arquivo com extensao ".cpp"
+    e dar #include "nome.h", e dessa forma a classe se torna reultilizável e compartilhavel e código se torna mais limpo, e se tem melhor a ideia de 
+    encapsulamento.
+
+    Separando a interface da implementação:
+
+    ->Interface de uma classe; interfaces definem e padroniazam o modo como pessoas, sistemas e coisas interagem entre si.Como por exemplo o controle do rádio
+    que serve como uma interface entre o usuario e os componenentes internos do rádio, por meio de botões, touch, ou até comando de voz, uma interface especifica
+    quais operações o usuario pode realizar, entretando não especifica como essas operações acontecem.
+    ->De maneira semelhante a interface de um classe descreve quais serviços o usuario pode solicitar e como ele pode solicitar, mas não descreve como esses 
+    serviços acontecem, a interface de um classe são as funções membros da classe descritas.
+    ->Assim divide-se o código em 3 arquivos, o primeiro "GradeBook.h" tem a definição da classe, e as menções às funções membros, o segundo tem extesnao cpp
+    e deve ter o mesmo nome do arquivo .h, mas do formato .cpp, e nele há a descrição das funções, e o final com extensao .cpp que contém o "main".
+    ->Isso é mostrado nos arquivos "GradeBook2.h","GradeBook2.cpp" e "exemplo6.cpp".
+    ->Para compilar deve-se digitar no terminal linux o seguinte código "g++ nome.cpp nome2.cpp -o output", e então eles estarão vinculados.
+
+    Validando dados com a função set:
+    ->Como pode ser visto no "exemplo7.cpp", podemos usar o método set, para alem de setar na variável o valor que é desejado, avaliar se esse valor é válido
+    para o sistema, logo nesse exemplo, caso o curso tivesse mais de 25 caracteres, ele é reduzido para ter 25, logo o método set é usado para validar dados
+    e ajustá-los caso estejam errados.
+
